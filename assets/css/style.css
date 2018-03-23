@@ -1,0 +1,302 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End CSS Reset */
+
+
+@font-face {
+	font-family:RSU;
+	src: url(../fonts/RSU_Regular.ttf);
+}
+
+@font-face {
+	font-family:KeepCalm;
+	src: url(../fonts/KeepCalm-Medium.ttf);
+}
+
+body {
+	background-repeat: no-repeat;
+  font-family: sans-serif;
+  color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased
+}
+
+h1,h2,h3,h4,h4 {
+	font-family:"KeepCalm",sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+p{
+	font-family:"RSU",sans-serif;
+	color: #fff;
+	font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  width: 100%;
+  top:0;
+}
+
+// we'll add this class using javascript
+.nav-up {
+  top: -40px;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  font-family:"RSU",sans-serif;
+  position: fixed;
+  padding: 20px 10px 10px 10px;
+  height: 30px;
+  font-size: 20px;
+  background-color:;
+  z-index: 9999;
+}
+
+header a {
+  margin-right: 20px;
+}
+
+header a.register {
+  background-color: #fff;
+  color:#007189;
+  padding: 1px 10px;
+  border-radius: 100px;
+}
+
+header a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.hero-button {
+  font-family:"RSU",sans-serif;
+  font-size: 30px;
+  padding: 5px 15px;
+  display: inline-block;
+  background-color: #fff;
+  color:#534E8C;
+  border-radius: 360px;
+}
+
+.hero-button:hover {
+  transform:scale(1.05);
+  transition: .1s ease;
+}
+
+
+.logo {
+  background: url(../img/logo.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.intro-wrapper {
+  background:linear-gradient(#037289,#5e4a88);
+  height: 800px;
+  text-align: center;
+}
+
+.intro-wrapper .logo {
+  transform: translateX(-20px);
+  display: inline-block;
+  width: 450px;
+  height: 350px;
+}
+
+.stars-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sponsor {
+  display:block;
+  text-align: center;
+}
+
+.sponsor-badge {
+  background: url(../img/badge.svg) no-repeat;
+  margin: 5px 10px;
+  display:inline-block;
+  width: 90px;
+  height: 90px;
+}
+
+.hero-text {
+  margin-top:50px;
+}
+
+.sub-hero-text {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.register-button {
+  margin: 20px 0px;
+}
+
+.about-wrapper {
+    background:linear-gradient(#5e4a88,#6973AD);
+}
+
+.about-holder {
+    background: url(../img/temple.svg) no-repeat;
+    width: 100%;
+    height: 800px;
+    z-index:99;
+    display: block;
+    z-index: 99;
+}
+
+.about-holder p {
+  padding: 270px 350px 0px 350px;
+  line-height: 30px;
+}
+
+.logo {
+  background: url(../img/logo.svg) no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 360px;
+  margin-left: -18px;
+  background-size: 450px;
+}
+
+.division-wrapper {
+  width: 100%;
+  background:linear-gradient(#6973AD,#6BC9E9);
+}
+
+.temple-division {
+  padding-top: 400px;
+  background: url(../img/temple_division.svg) center no-repeat;
+  width: 100%;
+  height: 800px;
+  z-index:99;
+  display: block;
+  z-index: 99;
+  text-align: center;
+}
+
+
+.temple-division-selector{
+  display: inline-block;
+  margin: 150px 10px 40px 10px;
+  background: url(../img/pillar.svg) center no-repeat;
+  width:250px;
+  height: 400px;
+  transition: .1s ease;
+}
+
+.temple-division-selector:hover{
+  transform:scale(1.05);
+  transition: .1s ease;
+}
+
+.big-registration-button {
+  margin-top: -100px;
+  display: inline-block;
+  background-color:#4D4C47;
+  z-index: 999;
+  width: auto;
+  border-radius: 360px;
+  position: relative;
+  padding: 15px 20px;
+}
+
+.big-registration-button {
+  font-size: 28px;
+  font-family:"RSU",sans-serif;
+  transition: .1s ease;
+}
+
+.big-registration-button:hover {
+  transform:scale(1.05);
+  transition: .1s ease;
+}
+
+.register-number {
+  display: block;
+  bottom:0;
+  margin-top: 180px;
+  color: #333;
+  font-family:"KeepCalm",sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.register-type {
+  font-family:"RSU",sans-serif;
+  display: block;
+  font-size: 17px;
+}
+
+.time-location-gall {
+  background:linear-gradient(#6BC9E9,#FCFEFF);
+  min-height: 1500px;
+}
+
+.cliff {
+  position: relative;
+  display: block;
+  background: url(../img/cliff.svg) center no-repeat;
+  width:auto;
+  height: 1500px;
+  transform: translateX(-30%);
+}
+
+footer {
+  display: none;
+}
