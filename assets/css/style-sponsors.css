@@ -1,9 +1,9 @@
 /* 1329 / 1080 * 100 */
 .sponsor {
   background: linear-gradient(#1C9CB6, #143850);
-  padding-top: 7vh;
-  padding-bottom: 7vh;
-  min-height: 137.0555555556vh; }
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  min-height: 131.0555555556vh; }
   .sponsor .sponsor-wrapper {
     background: url(../img/sponsor-background.svg);
     background-repeat: no-repeat;
