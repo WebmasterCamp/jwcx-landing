@@ -1,0 +1,101 @@
+.qa {
+  width: 100%;
+  min-height: 104.875vh;
+  z-index: 9999;
+  position: relative;
+  padding-top: 4.875vh; }
+  .qa .qa-wave {
+    position: absolute;
+    width: 100%;
+    height: 7.5vh;
+    top: -2.625vh;
+    left: 0;
+    background-image: url(../img/qa-wave-temp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: 9999; }
+  .qa .qa-wrapper {
+    background: linear-gradient(#20a0ba, #3a7a96);
+    min-height: 100vh;
+    position: relative;
+    margin-top: 0;
+    padding-left: 16.5vw;
+    padding-right: 16.5vw;
+    padding-top: 9.5vh; }
+    .qa .qa-wrapper::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 1vh;
+      width: 100%;
+      height: 94vh;
+      background: url(../img/qa-background.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 0; }
+    .qa .qa-wrapper .qa-heading,
+    .qa .qa-wrapper .qa-main {
+      z-index: 1;
+      position: relative; }
+    .qa .qa-wrapper .qa-heading {
+      color: #5d4a43;
+      text-align: center;
+      margin-top: 4.15vh;
+      font-family: "RSU",sans-serif; }
+      .qa .qa-wrapper .qa-heading h2 {
+        font-size: 3rem;
+        font-weight: bolder;
+        text-transform: uppercase; }
+      .qa .qa-wrapper .qa-heading span {
+        font-size: 3rem;
+        font-weight: normal;
+        line-height: 3rem; }
+    .qa .qa-wrapper .qa-main {
+      height: 52.5vh;
+      margin-top: 4vh;
+      width: 100%;
+      display: block;
+      clear: both; }
+      .qa .qa-wrapper .qa-main .qa-main-questions-list, .qa .qa-wrapper .qa-main .qa-main-answers-list {
+        display: inline-block;
+        margin: 0;
+        height: 52.5vh; }
+      .qa .qa-wrapper .qa-main .qa-main-questions-list {
+        width: 33.3333333333%;
+        float: left;
+        overflow-x: hidden;
+        overflow-y: scroll; }
+        .qa .qa-wrapper .qa-main .qa-main-questions-list .qa-main-question {
+          display: block;
+          margin-right: 1vw;
+          font-family: "RSU",sans-serif;
+          font-size: 2rem;
+          text-align: center;
+          line-height: 4rem;
+          color: #5d4a43;
+          opacity: 0.5;
+          background-color: rgba(225, 216, 201, 0);
+          padding: 1rem; }
+          .qa .qa-wrapper .qa-main .qa-main-questions-list .qa-main-question:hover {
+            opacity: 1.0; }
+          .qa .qa-wrapper .qa-main .qa-main-questions-list .qa-main-question.active {
+            opacity: 1;
+            background-color: #e1d8c9; }
+        .qa .qa-wrapper .qa-main .qa-main-questions-list .simplebar-track {
+          background-color: #e1d8c9; }
+          .qa .qa-wrapper .qa-main .qa-main-questions-list .simplebar-track .simplebar-scrollbar::before {
+            background-color: #5d4a43; }
+      .qa .qa-wrapper .qa-main .qa-main-answers-list {
+        width: 66.1666666667%;
+        float: right; }
+        .qa .qa-wrapper .qa-main .qa-main-answers-list .qa-main-answer, .qa .qa-wrapper .qa-main .qa-main-answers-list .qa-main-answer * {
+          font-family: "RSU",sans-serif;
+          font-size: 1.75rem;
+          color: #5d4a43; }
+        .qa .qa-wrapper .qa-main .qa-main-answers-list .qa-main-answer {
+          padding-left: 2vw; }
+
+/*# sourceMappingURL=style-qa.css.map */

@@ -1,0 +1,139 @@
+$waveHeight: 7.5vh;
+$waveTop: -($waveHeight * 0.35);
+$waveInsideQAHeight: $waveHeight + $waveTop;
+
+$minHeightActual: 100vh;
+$minHeight: (100vh + $waveInsideQAHeight);
+
+.qa{
+	width: 100%; 
+	min-height: $minHeight;
+	z-index: 9999;
+	position: relative;
+	padding-top: $waveInsideQAHeight;
+	.qa-wave{
+		position: absolute;
+		width: 100%;
+		height: $waveHeight;
+		top: $waveTop;
+		left: 0;
+		background-image: url(../img/qa-wave-temp.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+		z-index: 9999;
+	}
+
+	$qaCorner : 2vh;
+	$qaSpace: 1vh;
+	$qaPaddingHorizontal: 16.5vw;
+	.qa-wrapper{
+		background: linear-gradient(rgb(32,160,186),rgb(58,122,150));
+		min-height: $minHeightActual;
+		position: relative;
+		margin-top: 0;
+		padding-left: $qaPaddingHorizontal;
+		padding-right: $qaPaddingHorizontal;
+		padding-top: 9.5vh;
+
+		&::before{
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: $qaSpace;
+			width: 100%;
+			height: ($minHeightActual - ($qaCorner * 2) - ($qaSpace * 2));
+			background: url(../img/qa-background.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			z-index: 0;
+		}
+		.qa-heading,
+		.qa-main{
+			z-index: 1;
+			position: relative;
+		}
+		.qa-heading{
+			color: rgb(93, 74, 67);
+			text-align: center;
+			margin-top: 4.15vh;
+			font-family:"RSU",sans-serif;
+			h2{
+				font-size: 3rem;
+				font-weight: bolder;
+				text-transform: uppercase;
+			}
+			span{
+				font-size: 3rem;
+				font-weight: normal;
+				line-height: 3rem;
+			}
+		}
+		.qa-main{
+			height: 52.5vh;
+			margin-top: 4vh;
+			width: 100%;
+			display: block;
+			clear: both;
+
+			$questionWidth: (100% / 3);
+			.qa-main-questions-list, .qa-main-answers-list{
+				display: inline-block;
+				margin: 0;
+				height: 52.5vh;
+			}
+			.qa-main-questions-list{
+				width: $questionWidth;
+				float: left;
+				overflow-x: hidden;
+				overflow-y: scroll;
+
+				.qa-main-question{
+					display: block;
+					margin-right: 1vw;
+					font-family:"RSU",sans-serif;
+					font-size: 2rem;
+					text-align: center;
+					line-height: 4rem;
+					color: rgb(93, 74, 67);
+					opacity: 0.5;
+					background-color: rgba(225, 216, 201, 0.0);
+					padding: 1rem;
+					
+					&:hover{
+						opacity: 1.0;
+					}
+
+					&.active{
+						opacity: 1;
+						background-color: rgba(225, 216, 201, 1.0);
+					}
+				}
+				.simplebar-track{
+					background-color: rgba(225, 216, 201, 1.0);
+					.simplebar-scrollbar{
+						&::before{
+							background-color: rgba(93, 74, 67, 1.0);
+						}
+					}
+				}
+			}
+			.qa-main-answers-list{
+				width: (100% - $questionWidth - 0.5%);
+				float: right;
+
+				.qa-main-answer, .qa-main-answer *{
+					font-family:"RSU",sans-serif;
+					font-size: 1.75rem;
+					color: rgb(93, 74, 67);
+				}
+
+				.qa-main-answer{
+					padding-left: 2vw;
+				}
+			}
+		}
+	}
+}
