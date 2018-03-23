@@ -1,0 +1,42 @@
+$paddingSponsor: 7vh;
+$heightSponsorWrapper: 123.0555555555556vh; /* 1329 / 1080 * 100 */
+.sponsor{
+	background: linear-gradient(#1C9CB6, #143850);
+	padding-top: $paddingSponsor;
+	padding-bottom: $paddingSponsor;
+	min-height: ($heightSponsorWrapper + ($paddingSponsor * 2));
+	.sponsor-wrapper{
+		background: url(../img/sponsor-background.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		height: $heightSponsorWrapper;
+		width: 100%;
+		.sponsor-heading{
+			padding-top: 13vh;
+			color: rgb(79, 76, 72);
+			text-align: center;
+			font-family:"RSU",sans-serif;
+			h2{
+				font-size: 3.25rem;
+				font-weight: bolder;
+				text-transform: uppercase;
+			}
+			span{
+				font-size: 2.25rem;
+				font-weight: normal;
+				line-height: 5rem;
+			}
+		}
+
+		$paddingBottomSponsorMain: 6vh;
+		.sponsor-main{
+			height: calc(#{$heightSponsorWrapper} - 13vh - 3.25rem - 5rem - #{$paddingBottomSponsorMain});
+			margin-bottom: $paddingBottomSponsorMain;
+			margin-left: 16vw;
+			margin-right: 16vw;
+			text-align: left;
+			overflow-y: auto;
+		}
+	}
+}
