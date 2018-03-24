@@ -11,11 +11,24 @@ $minHeight: (100vh + $waveInsideQAHeight);
 	z-index: 9999;
 	position: relative;
 	padding-top: $waveInsideQAHeight;
+	.qa-wave{
+		position: absolute;
+		width: 100%;
+		height: $waveHeight;
+		top: $waveTop;
+		left: 0;
+		background-image: url(../img/qa-wave-temp.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+		z-index: 9999;
+	}
 
 	$qaCorner : 2vh;
 	$qaSpace: 1vh;
 	$qaPaddingHorizontal: 16.5vw;
 	.qa-wrapper{
+		background: linear-gradient(#1DA5BF,#1C9CB6);
 		min-height: $minHeightActual;
 		position: relative;
 		margin-top: 0;

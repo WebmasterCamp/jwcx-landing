@@ -1,0 +1,46 @@
+.sea-super_section{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1da5bf+0,1c9cb6+54,143850+71,111028+100 */
+	background: #1da5bf; /* Old browsers */
+	background: -moz-linear-gradient(top, #1da5bf 0%, #1c9cb6 54%, #143850 71%, #111028 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #1da5bf 0%,#1c9cb6 54%,#143850 71%,#111028 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #1da5bf 0%,#1c9cb6 54%,#143850 71%,#111028 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1da5bf', endColorstr='#111028',GradientType=0 ); /* IE6-9 */
+
+	width: 100%;
+	position: relative;
+	
+	$waveHeight: 7.5vh;
+	$waveTop: -($waveHeight * 0.35);
+	$waveInsideQAHeight: $waveHeight + $waveTop;
+	.sea-wave{
+		content: ' ';
+		position: absolute;
+		width: 100%;
+		height: $waveHeight;
+		top: $waveTop;
+		left: 0;
+		background-image: url(../img/qa-wave-temp.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+		z-index: 9999;
+	}
+
+	.sea-spike{
+		content: ' ';
+		position: absolute;
+		width: 100vw;
+		height: 125.9259259259259vh; /* 1360 / 1080*/
+		bottom: 0;
+		left: 0;
+		background-image: url(../img/sea-spike.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+		z-index: 1;
+	}
+
+	> section{
+		z-index: 2;
+	}
+}

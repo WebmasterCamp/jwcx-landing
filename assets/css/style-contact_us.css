@@ -1,0 +1,41 @@
+/* 60vh
+ */
+.contact_us {
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
+  .contact_us .contact_us-wrapper {
+    margin-left: 8.8020833333333vw;
+    margin-right: 8.8020833333333vw;
+    width: 82.3958333333vw; }
+    .contact_us .contact_us-wrapper .contact_us-heading {
+      padding-top: 0;
+      color: white;
+      text-align: center;
+      font-family: "RSU",sans-serif; }
+      .contact_us .contact_us-wrapper .contact_us-heading h2 {
+        font-size: 3.25rem;
+        font-weight: bolder;
+        text-transform: uppercase; }
+      .contact_us .contact_us-wrapper .contact_us-heading span {
+        font-size: 2.25rem;
+        font-weight: normal;
+        line-height: 5rem; }
+    .contact_us .contact_us-wrapper .contact_us-main {
+      height: 65vh;
+      height: calc(65vh + 4rem); }
+      .contact_us .contact_us-wrapper .contact_us-main .contact_us-main-box {
+        height: 60vh;
+        width: calc(38.75vw - 4rem);
+        background-color: white;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        float: left;
+        margin-right: 4.85vw;
+        margin-top: 4vh;
+        padding: 2rem; }
+        .contact_us .contact_us-wrapper .contact_us-main .contact_us-main-box:last-child {
+          margin-right: 0; }
+        .contact_us .contact_us-wrapper .contact_us-main .contact_us-main-box p {
+          color: black; }
+
+/*# sourceMappingURL=style-contact_us.css.map */
