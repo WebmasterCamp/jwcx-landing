@@ -1,0 +1,34 @@
+/* 1329 / 1080 * 100 */
+.sponsor {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  min-height: 131.0555555556vh; }
+  .sponsor .sponsor-wrapper {
+    background: url(../img/sponsor-background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 123.0555555556vh;
+    width: 100%; }
+    .sponsor .sponsor-wrapper .sponsor-heading {
+      padding-top: 13vh;
+      color: #4f4c48;
+      text-align: center;
+      font-family: "RSU",sans-serif; }
+      .sponsor .sponsor-wrapper .sponsor-heading h2 {
+        font-size: 3.25rem;
+        font-weight: bolder;
+        text-transform: uppercase; }
+      .sponsor .sponsor-wrapper .sponsor-heading span {
+        font-size: 2.25rem;
+        font-weight: normal;
+        line-height: 5rem; }
+    .sponsor .sponsor-wrapper .sponsor-main {
+      height: calc(123.0555555556vh - 13vh - 3.25rem - 5rem - 6vh);
+      margin-bottom: 6vh;
+      margin-left: 16vw;
+      margin-right: 16vw;
+      text-align: left;
+      overflow-y: auto; }
+
+/*# sourceMappingURL=style-sponsors.css.map */
