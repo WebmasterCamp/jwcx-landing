@@ -142,8 +142,8 @@ header a:hover {
 }
 
 .intro-wrapper {
-  background:linear-gradient(#037289,#5e4a88);
-  height: 800px;
+  background: linear-gradient(#037289,#5e4a88);
+  height: 850px;
   text-align: center;
 }
 
@@ -195,17 +195,35 @@ header a:hover {
 }
 
 .about-holder {
-    background: url(../img/temple.svg) no-repeat;
+    background: url(../img/temple.svg) no-repeat center;
     width: 100%;
     height: 800px;
-    z-index:99;
     display: block;
     z-index: 99;
 }
 
-.about-holder p {
-  padding: 270px 350px 0px 350px;
-  line-height: 30px;
+.about-holder div.heading {
+	font-family: 'RSU';
+	font-size: 30px;
+	color: #4D4C47;
+	position: absolute;
+	margin-top: 186px;
+	width: 100vw;
+	text-align: center;
+}
+
+.about-holder div.content {
+	font-family: 'RSU';
+	font-size: 30px;
+	color: #ddd;
+  line-height: 35px;
+	position: absolute;
+	margin-top: 260px;
+	width: 650px;
+	height: 400px;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	left: calc(50% - 650px / 2);	
 }
 
 .logo {
@@ -213,7 +231,6 @@ header a:hover {
   background-position: center;
   width: 100%;
   height: 320px;
-  margin-left: -18px;
 	margin-top: 70px;
 	margin-bottom: 20px;
   background-size: 600px;
