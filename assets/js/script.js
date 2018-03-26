@@ -1,3 +1,19 @@
+$(document).ready(function() {
+  
+  // navigation bar
+  $(window).on('scroll', function() {
+      var y_scroll_pos = window.pageYOffset;
+      var scroll_pos_test = 10;
+      if(y_scroll_pos > scroll_pos_test) {
+        $('header').addClass('with-background');
+      } else {
+        $('header').removeClass('with-background');
+      } 
+  });
+  
+});
+
+// create star particle
 particlesJS("particles-js", {
   "particles": {
     "number": {
