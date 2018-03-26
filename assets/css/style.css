@@ -141,13 +141,6 @@ header a:hover {
   transition: .1s ease;
 }
 
-
-.logo {
-  background: url(../img/logo.svg) no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 .intro-wrapper {
   background:linear-gradient(#037289,#5e4a88);
   height: 800px;
@@ -169,6 +162,7 @@ header a:hover {
 
 .sponsor {
   display:block;
+	margin-top: -50px;
   text-align: center;
 }
 
@@ -176,12 +170,12 @@ header a:hover {
   background: url(../img/badge.svg) no-repeat;
   margin: 5px 10px;
   display:inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 
 .hero-text {
-  margin-top:50px;
+  margin-top: 20px;
 }
 
 .sub-hero-text {
@@ -190,6 +184,9 @@ header a:hover {
 }
 
 .register-button {
+	position: absolute;
+	width: 100vw;
+	align-items: center;
   margin: 20px 0px;
 }
 
@@ -215,9 +212,11 @@ header a:hover {
   background: url(../img/logo.svg) no-repeat;
   background-position: center;
   width: 100%;
-  height: 360px;
+  height: 320px;
   margin-left: -18px;
-  background-size: 450px;
+	margin-top: 70px;
+	margin-bottom: 20px;
+  background-size: 600px;
 }
 
 .division-wrapper {
