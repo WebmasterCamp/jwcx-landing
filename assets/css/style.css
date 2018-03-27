@@ -1,80 +1,72 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* End CSS Reset */
 
-
 @font-face {
-	font-family:RSU;
-	src: url(../fonts/RSU_Regular.ttf);
+  font-family: RSU;
+  src: url(../fonts/RSU_Regular.ttf);
 }
 
 @font-face {
-	font-family:KeepCalm;
-	src: url(../fonts/KeepCalm-Medium.ttf);
+  font-family: KeepCalm;
+  src: url(../fonts/KeepCalm-Medium.ttf);
 }
 
 body {
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
   font-family: sans-serif;
   color: #fff;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased
 }
 
-h1,h2,h3,h4,h4 {
-	font-family:"KeepCalm",sans-serif;
+h1, h2, h3, h4, h4 {
+  font-family: "KeepCalm", sans-serif;
 }
 
 h1 {
-	font-size: 40px;
+  font-size: 40px;
 }
 
-p{
-	font-family:"RSU",sans-serif;
-	font-size: 25px;
-	margin-bottom: 10px;
+p {
+  font-family: "RSU", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 a {
@@ -84,7 +76,7 @@ a {
 
 section {
   width: 100%;
-  top:0;
+  top: 0;
 }
 
 // we'll add this class using javascript
@@ -95,19 +87,19 @@ section {
 header {
   text-align: center;
   width: 100%;
-  font-family:"RSU",sans-serif;
+  font-family: "RSU", sans-serif;
   position: fixed;
   padding: 20px 10px 10px 10px;
   height: 30px;
   font-size: 20px;
   background-color: transparent;
-	transition: 0.2s;
+  transition: 0.2s;
   z-index: 9999;
 }
 
 header.with-background {
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 9999999;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999999;
 }
 
 header a {
@@ -116,7 +108,7 @@ header a {
 
 header a.register {
   background-color: #fff;
-  color:#007189;
+  color: #007189;
   padding: 1px 10px;
   border-radius: 100px;
 }
@@ -127,22 +119,22 @@ header a:hover {
 }
 
 .hero-button {
-  font-family:"RSU",sans-serif;
+  font-family: "RSU", sans-serif;
   font-size: 30px;
   padding: 5px 15px;
   display: inline-block;
   background-color: #fff;
-  color:#534E8C;
+  color: #534E8C;
   border-radius: 360px;
 }
 
 .hero-button:hover {
-  transform:scale(1.05);
+  transform: scale(1.05);
   transition: .1s ease;
 }
 
 .intro-wrapper {
-  background: linear-gradient(#037289,#5e4a88);
+  background: linear-gradient(#037289, #5e4a88);
   height: 850px;
   text-align: center;
 }
@@ -161,15 +153,15 @@ header a:hover {
 }
 
 .sponsor {
-  display:block;
-	margin-top: -50px;
+  display: block;
+  margin-top: -50px;
   text-align: center;
 }
 
 .sponsor-badge {
   background: url(../img/badge.svg) no-repeat;
   margin: 5px 10px;
-  display:inline-block;
+  display: inline-block;
   width: 100px;
   height: 100px;
 }
@@ -184,46 +176,46 @@ header a:hover {
 }
 
 .register-button {
-	position: absolute;
-	width: 100vw;
-	align-items: center;
+  position: absolute;
+  width: 100vw;
+  align-items: center;
   margin: 20px 0px;
 }
 
 .about-wrapper {
-    background:linear-gradient(#5e4a88,#6973AD);
+  background: linear-gradient(#5e4a88, #6973AD);
 }
 
 .about-holder {
-    background: url(../img/temple.svg) no-repeat center;
-    width: 100%;
-    height: 800px;
-    display: block;
-    z-index: 99;
+  background: url(../img/temple.svg) no-repeat center;
+  width: 100%;
+  height: 800px;
+  display: block;
+  z-index: 99;
 }
 
 .about-holder div.heading {
-	font-family: 'RSU';
-	font-size: 30px;
-	color: #4D4C47;
-	position: absolute;
-	margin-top: 186px;
-	width: 100vw;
-	text-align: center;
+  font-family: 'RSU';
+  font-size: 30px;
+  color: #4D4C47;
+  position: absolute;
+  margin-top: 186px;
+  width: 100vw;
+  text-align: center;
 }
 
 .about-holder div.content {
-	font-family: 'RSU';
-	font-size: 30px;
-	color: #ddd;
+  font-family: 'RSU';
+  font-size: 30px;
+  color: #ddd;
   line-height: 35px;
-	position: absolute;
-	margin-top: 260px;
-	width: 650px;
-	height: 400px;
-	box-sizing: border-box;
-	padding: 10px 20px;
-	left: calc(50% - 650px / 2);	
+  position: absolute;
+  margin-top: 260px;
+  width: 650px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  left: calc(50% - 650px / 2);
 }
 
 .logo {
@@ -231,14 +223,14 @@ header a:hover {
   background-position: center;
   width: 100%;
   height: 320px;
-	margin-top: 70px;
-	margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 20px;
   background-size: 600px;
 }
 
 .division-wrapper {
   width: 100%;
-  background:linear-gradient(#6973AD,#6BC9E9);
+  background: linear-gradient(#6973AD, #6BC9E9);
 }
 
 .temple-division {
@@ -246,13 +238,13 @@ header a:hover {
   background: url(../img/temple_division.svg) center no-repeat;
   width: 100%;
   height: 800px;
-  z-index:99;
+  z-index: 99;
   display: block;
   z-index: 99;
   text-align: center;
 }
 
-.temple-division-selector{
+.temple-division-selector {
   display: inline-block;
   margin: 150px -70px 40px -70px;
   width: 450px;
@@ -260,20 +252,23 @@ header a:hover {
   transition: .1s ease;
 }
 
-.temple-division-selector:hover{
-  transform:scale(1.05);
+.temple-division-selector:hover {
+  transform: scale(1.05);
   transition: .1s ease;
 }
 
 .temple-content {
   background: url(../img/characters/content.svg) center no-repeat;
 }
+
 .temple-marketing {
   background: url(../img/characters/marketing.svg) center no-repeat;
 }
+
 .temple-design {
   background: url(../img/characters/design.svg) center no-repeat;
 }
+
 .temple-programming {
   background: url(../img/characters/programming.svg) center no-repeat;
 }
@@ -281,7 +276,7 @@ header a:hover {
 .big-registration-button {
   margin-top: -100px;
   display: inline-block;
-  background-color:#4D4C47;
+  background-color: #4D4C47;
   z-index: 999;
   width: auto;
   border-radius: 360px;
@@ -291,183 +286,200 @@ header a:hover {
 
 .big-registration-button {
   font-size: 28px;
-  font-family:"RSU",sans-serif;
+  font-family: "RSU", sans-serif;
   transition: .1s ease;
 }
 
 .big-registration-button:hover {
-  transform:scale(1.05);
+  transform: scale(1.05);
   transition: .1s ease;
 }
 
 .register-number {
   display: block;
-  bottom:0;
+  bottom: 0;
   margin-top: 410px;
-	margin-left: 13px;
+  margin-left: 13px;
   color: #333;
-  font-family:"KeepCalm",sans-serif;
+  font-family: "KeepCalm", sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
 
 .register-type {
-  font-family:"RSU",sans-serif;
+  font-family: "RSU", sans-serif;
   display: block;
   font-size: 17px;
 }
 
 .time-location-gall {
-  background:linear-gradient(#6BC9E9,#FCFEFF);
+  background: linear-gradient(#6BC9E9, #FCFEFF);
   min-height: 1500px;
 }
 
 .timeline-heading {
-	position: absolute;
-	width: 100vw;
-	height: 120px;
-	z-index: 999;
-	color: #594B44;
-	text-align: center;
-	background: url(../img/timeline-heading.svg) no-repeat center;
+  position: absolute;
+  width: 100vw;
+  height: 120px;
+  z-index: 999;
+  color: #594B44;
+  text-align: center;
+  background: url(../img/timeline-heading.svg) no-repeat center;
 }
 
-.timeline-heading > h2 {
-	margin-top: 38px;
-  font-family:"KeepCalm",sans-serif;
-	font-size: 40px;
+.timeline-heading>h2 {
+  margin-top: 38px;
+  font-family: "KeepCalm", sans-serif;
+  font-size: 40px;
 }
 
-.timeline-heading > span {
-	font-family: 'RSU';
-	font-size: 25px;
+.timeline-heading>span {
+  font-family: 'RSU';
+  font-size: 25px;
 }
 
 .timeline-container {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	z-index: 999;
-	position: absolute;
-	padding-top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  position: absolute;
+  padding-top: 200px;
 }
 
 .timeline-item {
-	padding: 0 20px;
-	height: 340px;
-	width: 340px;
-	background: url(../img/timeline.svg) no-repeat;
+  padding: 0 20px;
+  height: 340px;
+  width: 340px;
+  background: url(../img/timeline.svg) no-repeat;
 }
-.timeline-item > .foot {
-	position: relative;
-	color: #54463D;
-	width: 85%;
-	top: 230px;
-	text-align: center;
+
+.timeline-item>.foot {
+  position: relative;
+  color: #54463D;
+  width: 85%;
+  top: 230px;
+  text-align: center;
 }
-.timeline-item > .foot > h2 {
+
+.timeline-item>.foot>h2 {
   font-family: 'RSU';
-	font-weight: bold;
-	font-size: 22px;
-	margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
-.timeline-item > .foot > span {
+
+.timeline-item>.foot>span {
   font-family: 'RSU';
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .cliff {
   background: url(../img/cliff.svg) center no-repeat;
   height: 1700px;
-	width: 1700px;
-	margin-left: -30%;
+  width: 1700px;
+  margin-left: -30%;
 }
 
 .location-wrapper {
-	width: 100vw;
-	margin-top: 700px;
-	height: 750px;
-	position: absolute;
-	background: url(../img/content-background.svg) center no-repeat;
+  width: 100vw;
+  margin-top: 700px;
+  height: 750px;
+  position: absolute;
+  background: url(../img/content-background.svg) center no-repeat;
 }
-.location-wrapper > .content {
-	width: 1000px;
-	color: black;
-	margin: auto auto;
-	margin-top: 30px;
+
+.location-wrapper>.content {
+  width: 1000px;
+  color: black;
+  margin: auto auto;
+  margin-top: 30px;
 }
-.location-wrapper > .header {
-	width: 100%;
-	color: #584B44;
-	margin-top: 100px;
-	text-align: center;
+
+.location-wrapper>.header {
+  width: 100%;
+  color: #584B44;
+  margin-top: 100px;
+  text-align: center;
 }
-.location-wrapper > .header > h2 {
-  font-family:"KeepCalm",sans-serif;
-	font-size: 50px;
+
+.location-wrapper>.header>h2 {
+  font-family: "KeepCalm", sans-serif;
+  font-size: 50px;
 }
-.location-wrapper > .header > span {
-	font-family: 'RSU';
-	font-size: 30px;
+
+.location-wrapper>.header>span {
+  font-family: 'RSU';
+  font-size: 30px;
 }
 
 .qa {
-	height: 1000px;
+  height: 1000px;
 }
+
 .qa-wrapper {
-	width: 100vw;
-	height: 750px;
-	margin-top: 100px;
-	position: absolute;
-	background: url(../img/content-background.svg) center no-repeat;
+  width: 100vw;
+  height: 750px;
+  margin-top: 100px;
+  position: absolute;
+  background: url(../img/content-background.svg) center no-repeat;
 }
-.qa-wrapper > .content {
-	width: 1000px;
-	color: black;
-	margin: auto auto;
-	margin-top: 30px;
-	display: flex;
+
+.qa-wrapper>.content {
+  width: 1000px;
+  color: black;
+  margin: auto auto;
+  margin-top: 30px;
+  display: flex;
 }
+
 .qa-main-questions-list {
-	width: 300px;
-	height: 450px;
+  width: 300px;
+  height: 450px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
 .qa-main-question {
-	display: block;
-	cursor: pointer;
-	text-align: center;
-	color: #99928D;
-	font-family: 'RSU';
-	font-size: 25px;
-	padding: 20px 0;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  color: #99928D;
+  font-family: 'RSU';
+  font-size: 25px;
+  padding: 20px 0;
 }
+
 .qa-main-question.active {
-	color: #4C3A34;
-	background: #DFD8CB;
+  color: #4C3A34;
+  background: #DFD8CB;
 }
+
 .qa-main-questions-list .simplebar-track .simplebar-scrollbar::before {
   background-color: #5d4a43;
 }
+
 .qa-main-answers {
-	flex: 1;
-	padding: 20px;
-	color: #412C20!important;
+  flex: 1;
+  padding: 20px;
+  color: #412C20!important;
 }
-.qa-wrapper > .header {
-	width: 100%;
-	color: #584B44;
-	margin-top: 100px;
-	text-align: center;
+
+.qa-wrapper>.header {
+  width: 100%;
+  color: #584B44;
+  margin-top: 100px;
+  text-align: center;
 }
-.qa-wrapper > .header > h2 {
-  font-family:"KeepCalm",sans-serif;
-	font-size: 50px;
+
+.qa-wrapper>.header>h2 {
+  font-family: "KeepCalm", sans-serif;
+  font-size: 50px;
 }
-.qa-wrapper > .header > span {
-	font-family: 'RSU';
-	font-size: 30px;
+
+.qa-wrapper>.header>span {
+  font-family: 'RSU';
+  font-size: 30px;
 }
 
 footer {
