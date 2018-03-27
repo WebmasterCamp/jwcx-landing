@@ -1,11 +1,3 @@
-.qa {
-  width: 100%;
-  min-height: 104.875vh;
-  z-index: 9999;
-  position: relative;
-  padding-top: 4.875vh;
-}
-
 .qa .qa-wrapper {
   min-height: 100vh;
   position: relative;

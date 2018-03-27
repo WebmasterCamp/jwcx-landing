@@ -73,8 +73,8 @@ h1 {
 
 p{
 	font-family:"RSU",sans-serif;
-	color: #fff;
-	font-size: 24px;
+	font-size: 25px;
+	margin-bottom: 10px;
 }
 
 a {
@@ -411,6 +411,64 @@ header a:hover {
 	font-size: 30px;
 }
 
+.qa {
+	height: 1000px;
+}
+.qa-wrapper {
+	width: 100vw;
+	height: 750px;
+	margin-top: 100px;
+	position: absolute;
+	background: url(../img/content-background.svg) center no-repeat;
+}
+.qa-wrapper > .content {
+	width: 1000px;
+	color: black;
+	margin: auto auto;
+	margin-top: 30px;
+	display: flex;
+}
+.qa-main-questions-list {
+	width: 300px;
+	height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.qa-main-question {
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	color: #99928D;
+	font-family: 'RSU';
+	font-size: 25px;
+	padding: 20px 0;
+}
+.qa-main-question.active {
+	color: #4C3A34;
+	background: #DFD8CB;
+}
+.qa-main-questions-list .simplebar-track .simplebar-scrollbar::before {
+  background-color: #5d4a43;
+}
+.qa-main-answers {
+	flex: 1;
+	padding: 20px;
+	color: #412C20!important;
+}
+.qa-wrapper > .header {
+	width: 100%;
+	color: #584B44;
+	margin-top: 100px;
+	text-align: center;
+}
+.qa-wrapper > .header > h2 {
+  font-family:"KeepCalm",sans-serif;
+	font-size: 50px;
+}
+.qa-wrapper > .header > span {
+	font-family: 'RSU';
+	font-size: 30px;
+}
 
 footer {
   display: none;
