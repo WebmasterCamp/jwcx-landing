@@ -322,14 +322,50 @@ header a:hover {
   min-height: 1500px;
 }
 
-.cliff {
-  position: relative;
-  display: block;
-  background: url(../img/cliff.svg) center no-repeat;
-  width:auto;
-  height: 1500px;
-  transform: translateX(-30%);
+.timeline-heading {
+	position: absolute;
+	width: 100vw;
+	height: 120px;
+	z-index: 999;
+	color: #594B44;
+	text-align: center;
+	background: url(../img/timeline-heading.svg) no-repeat center;
 }
+
+.timeline-heading > h2 {
+	margin-top: 38px;
+  font-family:"KeepCalm",sans-serif;
+	font-size: 40px;
+}
+
+.timeline-heading > span {
+	font-family: 'RSU';
+	font-size: 25px;
+}
+
+.timeline-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	z-index: 999;
+	position: absolute;
+	padding-top: 200px;
+}
+
+.timeline-item {
+	padding: 0 20px;
+	height: 340px;
+	width: 340px;
+	background: url(../img/timeline.svg) no-repeat;
+}
+
+.cliff {
+  background: url(../img/cliff.svg) center no-repeat;
+  height: 1700px;
+	width: 1700px;
+	margin-left: -30%;
+}
+
 
 footer {
   display: none;
