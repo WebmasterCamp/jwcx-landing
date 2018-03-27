@@ -104,7 +104,8 @@ section {
 
 .nav-menu {
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-right: 20px;
+	text-align: right;
 	font-size: 30px;
 }
 

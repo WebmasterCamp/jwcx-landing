@@ -1,6 +1,13 @@
 $(document).ready(function() {
+  var close = true;
   // mobile navigation bar
   $('.nav-menu').click(function() {
+    if (close === true) {
+      $('.nav-menu').html('<i class="fa fa-times"></i>');
+    } else {
+      $('.nav-menu').html('<i class="fa fa-bars"></i>');
+    }
+    close = !close;
     $('.menu').toggleClass('disabled');
   });
   
