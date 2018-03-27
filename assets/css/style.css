@@ -79,9 +79,49 @@ section {
   top: 0;
 }
 
-// we'll add this class using javascript
-.nav-up {
-  top: -40px;
+.menu {
+	width: 100vw;
+	transition: 0.3s;
+}
+
+.menu.disabled {
+	margin-top: -310px;
+}
+
+.menu > a {
+	font-family: 'RSU';
+	font-size: 22px;
+	color: white;
+	padding: 20px;
+	display: block;
+	background: black;	
+	text-align: center;
+}
+
+.menu > a.register {
+	font-weight: bold;	
+}
+
+.nav-menu {
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+.nav-mobile {
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	z-index: 9999999;
+}
+
+@media (max-width: 600px) {
+	.nav-desktop {
+		display: none;
+	}	
+	.nav-mobile {
+		display: block;
+	}
 }
 
 header {
@@ -120,8 +160,8 @@ header a:hover {
 
 .hero-button {
   font-family: "RSU", sans-serif;
-  font-size: 30px;
-  padding: 5px 15px;
+  font-size: 25px;
+  padding: 10px 20px;
   display: inline-block;
   background-color: #fff;
   color: #534E8C;
@@ -139,11 +179,16 @@ header a:hover {
   text-align: center;
 }
 
-.intro-wrapper .logo {
-  transform: translateX(-20px);
-  display: inline-block;
-  width: 450px;
-  height: 350px;
+.logo {
+	width: 400px;
+	margin-top: 100px;
+	margin-bottom: 90px;
+}
+
+@media (max-width: 600px) {
+	.logo {
+		width: 300px;
+	}	
 }
 
 .stars-background {
@@ -166,8 +211,23 @@ header a:hover {
   height: 100px;
 }
 
+@media (max-width: 600px) {
+	.sponsor {
+		display: flex;
+	}	
+	.sponsor-badge {
+		flex: 1;
+	}
+}
+
 .hero-text {
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+	.hero-text {
+		font-size: 30px;
+	}
 }
 
 .sub-hero-text {
@@ -216,16 +276,6 @@ header a:hover {
   box-sizing: border-box;
   padding: 10px 20px;
   left: calc(50% - 650px / 2);
-}
-
-.logo {
-  background: url(../img/logo.svg) no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 320px;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  background-size: 600px;
 }
 
 .division-wrapper {

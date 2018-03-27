@@ -1,6 +1,10 @@
 $(document).ready(function() {
+  // mobile navigation bar
+  $('.nav-menu').click(function() {
+    $('.menu').toggleClass('disabled');
+  });
   
-  // navigation bar
+  // desktop navigation bar
   $(window).on('scroll', function() {
       var y_scroll_pos = window.pageYOffset;
       var scroll_pos_test = 10;
