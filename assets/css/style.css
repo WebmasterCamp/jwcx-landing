@@ -358,6 +358,23 @@ header a:hover {
 	width: 340px;
 	background: url(../img/timeline.svg) no-repeat;
 }
+.timeline-item > .foot {
+	position: relative;
+	color: #54463D;
+	width: 85%;
+	top: 230px;
+	text-align: center;
+}
+.timeline-item > .foot > h2 {
+  font-family: 'RSU';
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.timeline-item > .foot > span {
+  font-family: 'RSU';
+	font-size: 18px;
+}
 
 .cliff {
   background: url(../img/cliff.svg) center no-repeat;
