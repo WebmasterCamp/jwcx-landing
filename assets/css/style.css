@@ -483,13 +483,13 @@ header a:hover {
 }
 
 section.sponsor {
-	height: 1000px;
+  height: 1000px;
 }
 
 .sponsor-wrapper {
-	width: 100vw;
-	height: 980px;
-	background: url(../img/sponsor-background.svg) no-repeat center;
+  width: 100vw;
+  height: 980px;
+  background: url(../img/sponsor-background.svg) no-repeat center;
 }
 
 .sponsor-wrapper>.header {
@@ -500,7 +500,7 @@ section.sponsor {
 
 .sponsor-wrapper>.header>h2 {
   font-family: "KeepCalm", sans-serif;
-	padding-top: 80px;
+  padding-top: 80px;
   font-size: 50px;
 }
 
@@ -512,25 +512,25 @@ section.sponsor {
 .sponsor-wrapper>.content {
   width: 1000px;
   color: #3E2D22;
-	line-height: 30px;
+  line-height: 30px;
   margin: auto auto;
   margin-top: 30px;
 }
 
 section.contact-us {
-	height: 1000px;
+  height: 900px;
 }
 
-.contact-us >.header {
+.contact-us>.header {
   width: 100%;
   color: white;
-	margin-bottom: 70px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
 .contact-us>.header>h2 {
   font-family: "KeepCalm", sans-serif;
-	padding-top: 80px;
+  padding-top: 80px;
   font-size: 50px;
 }
 
@@ -539,36 +539,46 @@ section.contact-us {
   font-size: 30px;
 }
 
-.contact-us > .content {
-	width: 1100px;
-	margin: auto auto;
-	display: flex;
+.contact-us>.content {
+  width: 1100px;
+  margin: auto auto;
+  display: flex;
 }
 
-.contact-us > .content > div {
-	flex: 1;
-	height: 500px;
-	border-radius: 10px;
-	background: white;
+.contact-us>.content>div {
+  flex: 1;
+  height: 500px;
+  border-radius: 10px;
+  background: white;
 }
 
-.contact-us > .content > div:nth-child(1) {
-	margin-right: 20px;
+.contact-us>.content>div:nth-child(1) {
+  margin-right: 20px;
 }
-.contact-us > .content > div:nth-child(2) {
-	margin-left: 20px;
+
+.contact-us>.content>div:nth-child(2) {
+  margin-left: 20px;
 }
 
 /* NOTE: waiting for new svg */
+
 .deep-sea-spike {
-	width: 100%;
-	position: absolute;
-	background: url(../img/sea-spike.svg) repeat-x center;
-	background-size: 100%;
-	background-position: top;
-	margin-top: -200px;
+  width: 100%;
+  position: absolute;
+  background: url(../img/sea-spike.svg) repeat-x center;
+  background-size: 100%;
+  background-position: top;
+  margin-top: -200px;
 }
 
 footer {
-  display: none;
+  background: #111028;
+}
+
+footer>span {
+  display: block;
+  text-align: center;
+  padding-bottom: 100px;
+  color: white;
+  font-family: sans-serif;
 }
