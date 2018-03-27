@@ -242,7 +242,7 @@ header a:hover {
 }
 
 .temple-division {
-  padding-top: 400px;
+  padding-top: 200px;
   background: url(../img/temple_division.svg) center no-repeat;
   width: 100%;
   height: 800px;
@@ -252,19 +252,30 @@ header a:hover {
   text-align: center;
 }
 
-
 .temple-division-selector{
   display: inline-block;
-  margin: 150px 10px 40px 10px;
-  background: url(../img/pillar.svg) center no-repeat;
-  width:250px;
-  height: 400px;
+  margin: 150px -70px 40px -70px;
+  width: 450px;
+  height: 550px;
   transition: .1s ease;
 }
 
 .temple-division-selector:hover{
   transform:scale(1.05);
   transition: .1s ease;
+}
+
+.temple-content {
+  background: url(../img/characters/content.svg) center no-repeat;
+}
+.temple-marketing {
+  background: url(../img/characters/marketing.svg) center no-repeat;
+}
+.temple-design {
+  background: url(../img/characters/design.svg) center no-repeat;
+}
+.temple-programming {
+  background: url(../img/characters/programming.svg) center no-repeat;
 }
 
 .big-registration-button {
@@ -292,7 +303,8 @@ header a:hover {
 .register-number {
   display: block;
   bottom:0;
-  margin-top: 180px;
+  margin-top: 410px;
+	margin-left: 13px;
   color: #333;
   font-family:"KeepCalm",sans-serif;
   font-size: 30px;
