@@ -383,6 +383,34 @@ header a:hover {
 	margin-left: -30%;
 }
 
+.location-wrapper {
+	width: 100vw;
+	margin-top: 700px;
+	height: 750px;
+	position: absolute;
+	background: url(../img/content-background.svg) center no-repeat;
+}
+.location-wrapper > .content {
+	width: 1000px;
+	color: black;
+	margin: auto auto;
+	margin-top: 30px;
+}
+.location-wrapper > .header {
+	width: 100%;
+	color: #584B44;
+	margin-top: 100px;
+	text-align: center;
+}
+.location-wrapper > .header > h2 {
+  font-family:"KeepCalm",sans-serif;
+	font-size: 50px;
+}
+.location-wrapper > .header > span {
+	font-family: 'RSU';
+	font-size: 30px;
+}
+
 
 footer {
   display: none;
