@@ -483,7 +483,7 @@ header a:hover {
 }
 
 section.sponsor {
-	height: 2000px;
+	height: 1000px;
 }
 
 .sponsor-wrapper {
@@ -515,6 +515,58 @@ section.sponsor {
 	line-height: 30px;
   margin: auto auto;
   margin-top: 30px;
+}
+
+section.contact-us {
+	height: 1000px;
+}
+
+.contact-us >.header {
+  width: 100%;
+  color: white;
+	margin-bottom: 70px;
+  text-align: center;
+}
+
+.contact-us>.header>h2 {
+  font-family: "KeepCalm", sans-serif;
+	padding-top: 80px;
+  font-size: 50px;
+}
+
+.contact-us>.header>span {
+  font-family: 'RSU';
+  font-size: 30px;
+}
+
+.contact-us > .content {
+	width: 1100px;
+	margin: auto auto;
+	display: flex;
+}
+
+.contact-us > .content > div {
+	flex: 1;
+	height: 500px;
+	border-radius: 10px;
+	background: white;
+}
+
+.contact-us > .content > div:nth-child(1) {
+	margin-right: 20px;
+}
+.contact-us > .content > div:nth-child(2) {
+	margin-left: 20px;
+}
+
+/* NOTE: waiting for new svg */
+.deep-sea-spike {
+	width: 100%;
+	position: absolute;
+	background: url(../img/sea-spike.svg) repeat-x center;
+	background-size: 100%;
+	background-position: top;
+	margin-top: -200px;
 }
 
 footer {

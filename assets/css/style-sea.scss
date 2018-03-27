@@ -26,20 +26,6 @@
 		z-index: 9999;
 	}
 
-	.sea-spike{
-		content: ' ';
-		position: absolute;
-		width: 100vw;
-		height: 125.9259259259259vh; /* 1360 / 1080*/
-		bottom: 0;
-		left: 0;
-		background-image: url(../img/sea-spike.svg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 100% 100%;
-		z-index: 1;
-	}
-
 	> section{
 		z-index: 2;
 	}
