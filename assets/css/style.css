@@ -820,12 +820,7 @@ header a:hover {
   flex: 1;
   height: 340px;
   width: 330px;
-  background: url(../img/timeline.svg) no-repeat center;
   background: auto 100%;
-}
-
-.timeline-item.active {
-  background: url(../img/timeline-active.svg) no-repeat center;
 }
 
 .timeline-item>.foot {
