@@ -26,6 +26,7 @@
   </script>
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.modal.css">
   <link rel="stylesheet" href="assets/css/simplebar.css">
   <link rel="stylesheet" href="assets/css/style-sea.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
@@ -69,7 +70,7 @@
           <a class="menu-link" section="division" href="#">เลือกสาขา</a>
           <a class="menu-link" section="timeline" href="#">ระยะเวลา</a>
           <a class="menu-link" section="qa" href="#">คำถามที่พบบ่อย</a>
-          <a class="register" href="#">สมัครเลย</a>
+          <a class="register" href="#register" rel="modal:open">สมัครเลย</a>
         </div>
         <div class="nav-menu">
           <i class="fa fa-bars"></i>
@@ -84,7 +85,7 @@
           <a class="menu-link" section="division" href="#">เลือกสาขา</a>
           <a class="menu-link" section="timeline" href="#">ระยะเวลา</a>
           <a class="menu-link" section="qa" href="#">คำถามที่พบบ่อย</a>
-          <a class="register" href="#">สมัครเลย</a>
+          <a class="register" href="#register" rel="modal:open">สมัครเลย</a>
         </div>
       </header>
 
@@ -102,7 +103,7 @@
         <h1 class="hero-text">Next Step Web Thai</h1>
         <p class="sub-hero-text">วันที่ 27-29 เมษายน 2561</p>
         <div class="register-button">
-          <a href="#" class="hero-button">สมัครเลย</a>
+          <a href="#register" rel="modal:open" class="hero-button">สมัครเลย</a>
         </div>
       </section>
 
@@ -155,7 +156,7 @@
           </div>
         </div>
         <div class="big-registration-button">
-          <a href="#">สมัครสาขา</a>
+          <a href="#register" rel="modal:open">สมัครสาขา</a>
         </div>
       </section> 
 
@@ -326,8 +327,32 @@
         </div>
         <span>Copyright © 2018, Young Webmaster Camp, in association with Thai Webmaster Association. All right reserved.</span>
       </footer>
+      
+      <div id="register" class="register-dialog">
+        <div class="header">โปรดเลือกสาขาที่จะสมัคร</div>
+        <div class="warning">คำเตือน! ถ้าน้องเลือกสาขาไปแล้วจะไม่สามารถเปลี่ยนสาขาทีหลังได้่</div>
+        <div class="register-container">
+          <a href="#" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/content.svg) no-repeat center"></div>
+            <span>สมัครสาขา Content</span>
+          </a>
+          <a href="#" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/marketing.svg) no-repeat center"></div>
+            <span>สมัครสาขา Marketing</span>
+          </a>
+          <a href="#" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/design.svg) no-repeat center"></div>
+            <span>สมัครสาขา Design</span>
+          </a>
+          <a href="#" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/programming.svg) no-repeat center"></div>
+            <span>สมัครสาขา Programming</span>
+          </a>
+        </div>
+      </div>
 
       <script src="assets/js/jquery.js" type="text/javascript"></script>
+      <script src="assets/js/jquery.modal.js" type="text/javascript"></script>
       <script src="assets/js/particle.js" type="text/javascript"></script>
       <script src="assets/js/script.js" type="text/javascript"></script>
       <script src="assets/js/simplebar.js"></script>
