@@ -231,15 +231,6 @@ header a:hover {
   height: 100px;
 }
 
-@media (max-width: 600px) {
-	.sponsor {
-		display: flex;
-	}	
-	.sponsor-badge {
-		flex: 1;
-	}
-}
-
 .hero-text {
   margin-top: 40px;
 }
