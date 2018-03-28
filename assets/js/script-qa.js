@@ -6,7 +6,7 @@
 			return;
 
 		let index = $("#qa-questions-list .qa-main-question").index(this);
-		console.log("Index", index);
+		// console.log("Index", index);
 
 		if(index === -1)
 			return;
