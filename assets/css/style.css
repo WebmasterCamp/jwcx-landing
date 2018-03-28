@@ -939,6 +939,10 @@ header a:hover {
   }
 }
 
+#section_qa .content{
+  display: flex;
+}
+
 .qa-main-questions-list {
   width: 300px;
   height: 450px;
@@ -1000,6 +1004,48 @@ header a:hover {
   font-family: 'RSU';
   font-size: 30px;
 }
+
+@media (max-width: 800px) {
+  #section_qa{
+    height: 100%;
+    background: url(../img/content-background-middle.png) center repeat-y;
+    background-size: 100% auto;
+    position: relative;
+  }
+  #section_qa:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../img/content-background-top.png) top center no-repeat;
+    background-size: 100% auto;
+    top: -2.25%;
+    z-index: -1;
+  }
+
+  #section_qa:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../img/content-background-bottom.png) bottom center no-repeat;
+    background-size: 100% auto;
+    bottom: -2.25%;
+    z-index: -1;
+  }
+
+  #section_qa .content{
+    flex-direction: column;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .qa-main-questions-list{
+    width: 100%;
+  }
+}
+
 
 .sponsor-wrapper {
   width: 100vw;
