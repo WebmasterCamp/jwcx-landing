@@ -563,7 +563,7 @@ header a:hover {
   top: -90px;
   transform: translateX(-50%);
   background-color: #4D4C47;
-  z-index: 999;
+  z-index: 99999999;
   width: auto;
   border-radius: 360px;
   position: relative;
@@ -634,7 +634,7 @@ header a:hover {
 .time-location-gall {
   background: linear-gradient(#6BC9E9, #FCFEFF);
   position: relative;
-  z-index: -9;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -840,6 +840,11 @@ header a:hover {
   font-family: 'RSU';
   font-size: 25px;
   padding: 20px 0;
+}
+
+.qa-main-answers > p {
+  font-family: 'RSU';
+  font-size: 25px;
 }
 
 .qa-main-question.active {
