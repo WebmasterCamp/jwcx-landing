@@ -292,6 +292,19 @@ header a:hover {
   height: 100px;
 }
 
+.sponsor-container {
+	text-align: center;
+}
+.sponsor-image {
+	margin: 20px;
+}
+
+@media (max-width: 620px) {
+	.sponsor-image {
+		height: 60px;
+	}	
+}
+
 .hero-text {
   margin-top: 40px;
 }
