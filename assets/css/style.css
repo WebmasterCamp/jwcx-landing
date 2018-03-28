@@ -956,11 +956,6 @@ header a:hover {
   padding: 20px 0;
 }
 
-.qa-main-answers > p {
-  font-family: 'RSU';
-  font-size: 25px;
-}
-
 .qa-main-question.active {
   color: #4C3A34;
   background: #DFD8CB;
@@ -974,6 +969,19 @@ header a:hover {
   flex: 1;
   padding: 20px;
   color: #412C20!important;
+}
+
+.qa-main-answer-item{
+  display: none;
+}
+
+.qa-main-answer-item.active{
+  display: initial;
+}
+
+.qa-main-answer-item > p {
+  font-family: 'RSU';
+  font-size: 25px;
 }
 
 .qa-wrapper>.header {
