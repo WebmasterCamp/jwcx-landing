@@ -2,11 +2,11 @@
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1da5bf+0,1c9cb6+54,143850+71,111028+100 */
   background: #1da5bf;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #1da5bf 0%, #1c9cb6 54%, #143850 71%, #111028 100%);
+  background: -moz-linear-gradient(top, #1da5bf 0%, #143850 51%, #111028 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #1da5bf 0%, #1c9cb6 54%, #143850 71%, #111028 100%);
+  background: -webkit-linear-gradient(top, #1da5bf 0%, #143850 51%, #111028 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #1da5bf 0%, #1c9cb6 54%, #143850 71%, #111028 100%);
+  background: linear-gradient(to bottom, #1da5bf 0%, #143850 51%, #111028 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1da5bf', endColorstr='#111028', GradientType=0);
   /* IE6-9 */
