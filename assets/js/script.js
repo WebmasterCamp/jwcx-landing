@@ -31,7 +31,6 @@ $(document).ready(function() {
     e.preventDefault();
   });
   
-  
   // desktop navigation bar
   $(window).on('scroll', function() {
       var y_scroll_pos = window.pageYOffset;
@@ -42,6 +41,34 @@ $(document).ready(function() {
         $('header').removeClass('with-background');
       } 
   });
+  
+  // division section
+  $('p[name="division-content"]').hide();
+  $('p[name="division-content"][data="content"]').show();
+  $('.temple-division-selector').click(function() {
+      $('.temple-division-selector').removeClass('active');
+      $(this).addClass('active');
+      // toggle content
+      $('p[name="division-content"]').hide();
+      $('p[name="division-content"][data="'+$(this).attr('data')+'"]').show();
+  });
+  // division mobile slide
+  var store = ['content', 'marketing', 'design', 'programming'];
+  var index = 0;
+  $('div[name="division-slide"]').click(function() {
+    var data = $(this).attr('data');
+    if (data === "prev") {
+      index--;
+      if (index == -1) index = 3;
+    } else {
+      index++;
+      if (index == 4) index = 0;
+    }
+    $('.temple-division-selector').removeClass('active');
+    $('.temple-' + store[index]).addClass('active');
+    $('p[name="division-content"]').hide();
+    $('p[name="division-content"][data="'+store[index]+'"]').show();
+  })
   
 });
 
