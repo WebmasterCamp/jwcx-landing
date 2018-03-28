@@ -3,13 +3,34 @@ $(document).ready(function() {
   // mobile navigation bar
   $('.nav-menu').click(function() {
     if (close === true) {
-      $('.nav-menu').html('<i class="fa fa-times"></i>');
+      $('.nav-menu').html('<i style="color: black;" class="fa fa-times"></i>');
+      $('.nav-backdrop').fadeIn(100);
     } else {
       $('.nav-menu').html('<i class="fa fa-bars"></i>');
+      $('.nav-backdrop').fadeOut(100);
     }
     close = !close;
     $('.menu').toggleClass('disabled');
   });
+  $('.nav-backdrop').click(function() {
+    close = true;
+    $('.nav-menu').html('<i class="fa fa-bars"></i>');
+    $('.nav-backdrop').fadeOut(100);
+    $('.menu').toggleClass('disabled');
+  })
+  
+  // navigation bars
+  $('.menu-link').click(function(e) {
+    $('html, body').animate({
+      scrollTop: $('#section_'+$(this).attr('section')).offset().top - 50,
+    }, 'slow');
+    close = true;
+    $('.nav-menu').html('<i class="fa fa-bars"></i>');
+    $('.nav-backdrop').fadeOut(100);
+    $('.menu').toggleClass('disabled');
+    e.preventDefault();
+  });
+  
   
   // desktop navigation bar
   $(window).on('scroll', function() {

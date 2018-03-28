@@ -102,10 +102,13 @@ section {
 }
 
 .nav-menu {
-	margin-top: 20px;
-	margin-right: 20px;
+	top: 0px;
+	right: 0px;
 	text-align: right;
 	font-size: 30px;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	padding: 20px;
 }
 
 .nav-mobile {
@@ -113,6 +116,18 @@ section {
 	cursor: pointer;
 	position: fixed;
 	z-index: 9999999;
+}
+
+.nav-backdrop {
+	position: fixed;
+	display: none;
+	z-index: 999999;
+	background: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 @media (max-width: 600px) {

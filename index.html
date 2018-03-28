@@ -65,24 +65,26 @@
       
       <div class="nav-mobile">
         <div class="menu disabled">
-          <a href="#">รู้จักกับค่าย</a>
-          <a href="#">เลือกสาขา</a>
-          <a href="#">ระยะเวลา</a>
-          <a href="#">คำถามที่พบบ่อย</a>
-          <a class="register" href="">สมัครเลย</a>
+          <a class="menu-link" section="about" href="#">รู้จักกับค่าย</a>
+          <a class="menu-link" section="division" href="#">เลือกสาขา</a>
+          <a class="menu-link" section="timeline" href="#">ระยะเวลา</a>
+          <a class="menu-link" section="qa" href="#">คำถามที่พบบ่อย</a>
+          <a class="register" href="#">สมัครเลย</a>
         </div>
         <div class="nav-menu">
           <i class="fa fa-bars"></i>
         </div>
       </div>
+      
+      <div class="nav-backdrop"></div>
 
       <header class="nav-down nav-desktop">
         <div class="nav">
-          <a href="#">รู้จักกับค่าย</a>
-          <a href="#">เลือกสาขา</a>
-          <a href="#">ระยะเวลา</a>
-          <a href="#">คำถามที่พบบ่อย</a>
-          <a class="register" href="">สมัครเลย</a>
+          <a class="menu-link" section="about" href="#">รู้จักกับค่าย</a>
+          <a class="menu-link" section="division" href="#">เลือกสาขา</a>
+          <a class="menu-link" section="timeline" href="#">ระยะเวลา</a>
+          <a class="menu-link" section="qa" href="#">คำถามที่พบบ่อย</a>
+          <a class="register" href="#">สมัครเลย</a>
         </div>
       </header>
 
@@ -104,7 +106,7 @@
         </div>
       </section>
 
-      <section class="about-wrapper">
+      <section id="section_about" class="about-wrapper">
         <div class="about-holder">
           <div class="heading">คืออะไร ?</div>  
           <div class="content">
@@ -116,7 +118,7 @@
       </section>
 
       <section class="division-wrapper">
-        <div class="temple-division">
+        <div id="section_division" class="temple-division">
           <div class="header">เลือกสาขา</div>
           <div class="content">
             <p>คำกล่าวที่ว่า “รู้เขา รู้เรา รบร้อยครั้ง ชนะร้อยครั้ง” เป็นสำนวนที่เหมาะสมกับน้องสาขามาร์เก็ตติ้งมากที่สุด! เว็บที่มีฟังก์ชันที่ครบครัน ดีไซน์ที่ล้ำสมัย คอนเทนท์ที่นำเสนอคุณค่าของเว็บได้อย่างดีเยี่ยมจะไม่สามารถถ่ายทอดไปถึงลูกค้าหรือผู้ใช้งานเว็บได้เลยหากปราศจากการทำการตลาดที่สามารถเข้าถึงผู้คนต่าง ๆ ที่เป็นกลุ่มเป้าหมายของเราได้</p>
@@ -143,8 +145,7 @@
         </div>
       </section> 
 
-      <section class="time-location-gall">
-        
+      <section id="section_timeline" class="time-location-gall">
         <div class="timeline-heading">
           <h2>TIMELINE</h2>
           <span>ระยะเวลา</span>
@@ -202,13 +203,13 @@
           </div>
         </div>
         
-        <div class="cliff"></div>
+        <!-- <div class="cliff"></div> -->
       </section>
       
       <div class="sea-super_section">
         <div class="sea-wave"></div>
         
-        <div class="wrapper">
+        <div id="section_qa" class="wrapper">
           <div class="header">
             <h2>QUESTION - ANSWER</h2>
             <span>ถาม - ตอบ</span>
