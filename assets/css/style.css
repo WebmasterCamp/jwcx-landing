@@ -542,6 +542,7 @@ header a:hover {
 
 .time-location-gall {
   background: linear-gradient(#6BC9E9, #FCFEFF);
+	overflow: hidden;
 }
 
 .timeline-heading {
@@ -656,6 +657,20 @@ header a:hover {
   width: 1700px;
 	margin-top: -1700px;
   margin-left: -30%;
+}
+
+@media (max-width: 1300px) {
+	.cliff {
+	  height: 1200px;
+	  width: 1200px;
+		margin-top: -1200px;
+	  margin-left: -30%;
+	}
+}
+@media (max-width: 800px) {
+	.cliff {
+	  margin-left: -70%;
+	}
 }
 
 .wrapper {
@@ -887,8 +902,6 @@ section.contact-us {
 	  font-size: 30px;
 	}
 }
-
-/* NOTE: waiting for new svg */
 
 .deep-sea-spike {
   width: 100%;
