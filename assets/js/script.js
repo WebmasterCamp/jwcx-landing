@@ -69,6 +69,22 @@ $(document).ready(function() {
     $('p[name="division-content"]').hide();
     $('p[name="division-content"][data="'+store[index]+'"]').show();
   })
+  // get candidates count 
+  var apiEndpoint = 'https://api.registration.jwc.in.th/stats'
+  $.get(apiEndpoint, function(res) {
+    if (res.content !== undefined) {
+      $('#candidates-content').text(res.content)
+    }
+    if (res.marketing !== undefined) {
+      $('#candidates-marketing').text(res.marketing)
+    }
+    if (res.design !== undefined) {
+      $('#candidates-design').text(res.design)
+    }
+    if (res.programming !== undefined) {
+      $('#candidates-programming').text(res.programming)
+    }
+  })
   
 });
 
