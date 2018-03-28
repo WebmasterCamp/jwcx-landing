@@ -54,6 +54,15 @@
 
     <body>
       
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=132064977414608&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      
       <div class="nav-mobile">
         <div class="menu disabled">
           <a href="#">รู้จักกับค่าย</a>
@@ -135,7 +144,7 @@
       </section> 
 
       <section class="time-location-gall">
-        <div class="timeline-heading">
+        <!-- <div class="timeline-heading">
           <h2>TIMELINE</h2>
           <span>ระยะเวลา</span>
         </div>
@@ -164,9 +173,19 @@
               <span>15 มีนาคม - 18 เมษายน</span>
             </div>
           </div>
+        </div> -->
+        
+        <div class="wrapper">
+          <div class="header">
+            <h2>LOCATION</h2>
+            <span>สถานที่</span>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia accusantium eveniet impedit officia expedita deleniti eaque esse unde quos pariatur praesentium officiis, recusandae at aperiam, ab animi culpa soluta temporibus?
+          </div>
         </div>
         
-        <div class="location-wrapper">
+        <div class="wrapper">
           <div class="header">
             <h2>LOCATION</h2>
             <span>สถานที่</span>
@@ -179,10 +198,10 @@
         <div class="cliff"></div>
       </section>
       
-      <!-- <div class="sea-super_section">
-        <div class="sea-wave"></div> -->
+      <div class="sea-super_section">
+        <div class="sea-wave"></div>
         
-        <!-- <section class="qa">
+        <section class="qa">
           <div class="qa-wrapper">
             <div class="header">
               <h2>QUESTION - ANSWER</h2>
@@ -225,9 +244,9 @@
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
         
-        <!-- <section class="sponsor">
+        <section class="sponsor">
           <div class="sponsor-wrapper">
             <div class="header">
               <h2>SPONSORS</h2>
@@ -239,9 +258,9 @@
                 </p>
             </div>
           </div>
-        </section> -->
+        </section>
         
-        <!-- <section class="contact-us">
+        <section class="contact-us">
             <div class="deep-sea-spike"></div>
             <div class="header">
               <h2>CONTACT US</h2>
@@ -249,16 +268,21 @@
             </div>
             <div class="content">
               <div>
+                <center>
+                  <div class="fb-page" data-href="https://www.facebook.com/jwcth/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jwcth/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jwcth/">Junior Webmaster Camp</a></blockquote></div>
+                </center>
               </div>
               <div>
+                <a class="twitter-timeline" href="https://twitter.com/jwcth?ref_src=twsrc%5Etfw">Tweets by jwcth</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
             </div>
         </section>
-      </div> -->
+        
+      </div>
       
-      <!-- <footer>
+      <footer>
         <span>Copyright © 2018, Young Webmaster Camp, in association with Thai Webmaster Association. All right reserved.</span>
-      </footer> -->
+      </footer>
 
       <script src="assets/js/jquery.js" type="text/javascript"></script>
       <script src="assets/js/particle.js" type="text/javascript"></script>
