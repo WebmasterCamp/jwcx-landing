@@ -203,8 +203,13 @@ header a:hover {
   text-align: center;
 }
 
+.sponsor-footer {
+  display: block;
+	margin-bottom: 30px;
+  text-align: center;
+}
+
 .sponsor-badge {
-  background: url(../img/badge.svg) no-repeat;
   margin: 5px 10px;
   display: inline-block;
   width: 100px;
