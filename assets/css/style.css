@@ -565,27 +565,46 @@ header a:hover {
 }
 
 .timeline-container {
-  width: 100%;
+	width: 1400px;
+	margin: auto auto;
   display: flex;
+	flex-wrap: wrap;
   justify-content: center;
   z-index: 999;
   padding-top: 100px;
 	margin-bottom: 100px;
 }
 
+@media (max-width: 1300px) {
+	.timeline-container {
+		width: 700px;
+	}	
+}
+
+@media (max-width: 700px) {
+	.timeline-container {
+		width: 100%;
+	}	
+}
+
 .timeline-item {
-  padding: 0 20px;
+	flex: 1;
   height: 340px;
-  width: 340px;
-  background: url(../img/timeline.svg) no-repeat;
+  width: 330px;
+  background: url(../img/timeline.svg) no-repeat center;
+	background: auto 100%;
+}
+
+.timeline-item.active {
+  background: url(../img/timeline-active.svg) no-repeat center;
 }
 
 .timeline-item>.foot {
-  position: relative;
   color: #54463D;
-  width: 85%;
-  top: 230px;
+  width: 330px;
   text-align: center;
+	margin-left: calc(50% - 330px / 2);
+	margin-top: 230px;
 }
 
 .timeline-item>.foot>h2 {
@@ -598,6 +617,21 @@ header a:hover {
 .timeline-item>.foot>span {
   font-family: 'RSU';
   font-size: 18px;
+}
+
+@media (max-width: 1300px) {
+	.timeline-item {
+		width: 100%;
+		flex: 0 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 650px) {
+	.timeline-item {
+		flex: 0 100%;
+		margin-bottom: 20px;
+	}	
 }
 
 .cliff {
