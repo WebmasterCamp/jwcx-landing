@@ -939,6 +939,10 @@ header a:hover {
   }
 }
 
+#section_qa .content{
+  display: flex;
+}
+
 .qa-main-questions-list {
   width: 300px;
   height: 450px;
@@ -1000,6 +1004,16 @@ header a:hover {
   font-family: 'RSU';
   font-size: 30px;
 }
+
+@media (max-width: 800px) {
+  #section_qa .content{
+    flex-direction: column;
+  }
+  .qa-main-questions-list{
+    width: 100%;
+  }
+}
+
 
 .sponsor-wrapper {
   width: 100vw;
