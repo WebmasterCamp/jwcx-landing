@@ -1,5 +1,8 @@
 (function() {
-	new SimpleBar(document.getElementById('qa-questions-list'), { autoHide: false });
+	window.qaBar = new SimpleBar(document.getElementById('qa-questions-list'), { autoHide: false });
+	$(window).resize(function(){
+		window.qaBar.recalculate();
+	})
 	$(".qa-main-question").click(function(e){
 		e.preventDefault();
 		if($(this).hasClass("active"))
