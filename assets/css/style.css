@@ -952,16 +952,16 @@ header a:hover {
   height: 450px;
   overflow-x: hidden;
   overflow-y: scroll;
+  border: 5px solid #DED8CD;
 }
 
 .qa-main-question {
   display: block;
   cursor: pointer;
-  text-align: center;
   color: #99928D;
   font-family: 'RSU';
   font-size: 25px;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 
 .qa-main-question.active {
@@ -1055,17 +1055,18 @@ header a:hover {
   }
 
   .qa-main-questions-list .simplebar-content .qa-main-question{
-      width: 100%;
       flex-shrink: 0;
       padding-top: 25px;
       padding-bottom: 25px;
-      width: calc(100% - 17px - 15px - 15px);
       padding-right: 15px;
       padding-left: 15px;
       box-sizing: content-box;
   }
+  .qa-main-question {
+      display: inline-block;
+      border-right: 1px solid #DFD8CB;
+  }
 }
-
 
 .sponsor-wrapper {
   width: 100vw;
