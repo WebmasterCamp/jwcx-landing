@@ -1,5 +1,5 @@
 (function() {
-	window.qaBar = new SimpleBar(document.getElementById('qa-questions-list'), { autoHide: false });
+	window.qaBar = new SimpleBar(document.getElementById('qa-questions-list'), { autoHide: true });
 	$(window).resize(function(){
 		window.qaBar.recalculate();
 	})
