@@ -1213,10 +1213,14 @@ section.contact-us {
 		overflow-y: scroll;		
 	}
 	.gallery-container {
-		display: block;
+		/* display: block; */
+    display: flex;
 	}
 	.gallery-container > a {
-		flex: 0 45%;
+		/* flex: 0 45%; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 90%;
 	}
 }
 
