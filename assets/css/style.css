@@ -83,7 +83,7 @@ section {
 	max-width: 1200px!important;
 	background: white;
 	position: absolute;
-	z-index: 999999;
+	z-index: 99999999999;
 	display: none;
 }
 .register-dialog > .header {

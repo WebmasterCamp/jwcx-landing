@@ -9,6 +9,7 @@
   overflow: auto;
   z-index: 1;
   padding: 20px;
+  z-index: 99999999999;
   box-sizing: border-box;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
