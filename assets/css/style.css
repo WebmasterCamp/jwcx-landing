@@ -814,6 +814,10 @@ header a:hover {
     margin-bottom: 50px;
     width: 100%;
   }
+
+  .time-location-gall .gallery-wrapper{
+    margin-bottom: 30vh; /* Prevent overlay with the sea wave */
+  }
 }
 
 .timeline-item {
