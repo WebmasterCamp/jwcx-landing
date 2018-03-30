@@ -380,6 +380,27 @@ header a:hover {
 	.sponsor-image {
 		height: 60px;
 	}	
+  .sponsor-image.super-vip {
+    height: 80px;
+  }
+  .sponsor-image.vip {
+    height: 70px;
+  }
+  .sponsor-image.vip-dekd {
+    height: 40px;
+  }
+  .sponsor-image.sp {
+    height: 50px;
+  }
+  .sponsor-image.p {
+    height: 70px;
+  }
+  .sponsor-image.s {
+    height: 40px;
+  }
+  .sponsor-container > div {
+    margin-bottom: -5px;
+  }
 }
 
 .hero-text {
