@@ -25,17 +25,27 @@
     gtag('config', 'UA-42284958-3');
   </script>
 
+  <!-- preloading script and style -->
+  <link rel="preload" as="style" href="assets/css/style.css">
+  <link rel="preload" as="style" href="assets/css/jquery.modal.css">
+  <link rel="preload" as="style" href="assets/css/simplebar.css">
+  <link rel="preload" as="style" href="assets/css/style-sea.css">
+  <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="preload" as="script" href="assets/js/jquery.js">    
+  <link rel="preload" as="script" href="assets/js/jquery.modal.js">    
+  <link rel="preload" as="script" href="assets/js/particle.js">    
+  <link rel="preload" as="script" href="assets/js/script.js">    
+  <link rel="preload" as="script" href="assets/js/simplebar.js">    
+  <link rel="preload" as="script" href="assets/js/script-qa.js">    
+  
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/jquery.modal.css">
   <link rel="stylesheet" href="assets/css/simplebar.css">
   <link rel="stylesheet" href="assets/css/style-sea.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="assets/css/style-qa.css"> -->
-  <!-- <link rel="stylesheet" href="assets/css/style-sponsors.css">
-  <link rel="stylesheet" href="assets/css/style-contact_us.css"> -->
 
   <!-- Facebook Pixel Code -->
-  <script>
+  <script defer>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -56,7 +66,7 @@
     <body>
       
       <div id="fb-root"></div>
-      <script>(function(d, s, id) {
+      <script defer>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
