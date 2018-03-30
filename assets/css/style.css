@@ -675,6 +675,9 @@ header a:hover {
   .temple-division-selector>.heading {
     width: 170px;
   }
+  .temple-division-selector>.heading>span {
+    display: none;
+  }
   .temple-division-selector>.heading.content {
     margin-top: 290px;
     margin-left: -80px;
