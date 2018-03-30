@@ -634,11 +634,11 @@ header a:hover {
     margin-top: -170px;
   }
   .temple-division>.content {
-    width: 380px;
+    width: 350px;
     font-size: 20px;
     margin-top: -110px;
     margin-left: 0;
-    left: calc(50% - 380px / 2);
+    left: calc(50% - 350px / 2);
   }
   .temple-division-selector {
     margin: 10px -70px 40px -70px;
