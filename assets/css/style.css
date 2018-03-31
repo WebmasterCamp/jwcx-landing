@@ -383,6 +383,10 @@ header a:hover {
   .sponsor-image.super-vip {
     height: 80px;
   }
+  .sponsor-image.super-vip-it {
+    height: 100px;
+    margin: -15px 0;
+  }
   .sponsor-image.vip {
     height: 70px;
   }
