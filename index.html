@@ -43,6 +43,13 @@
   <link rel="stylesheet" href="assets/css/simplebar.css">
   <link rel="stylesheet" href="assets/css/style-sea.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  
+  <script type="text/javascript">
+  // automate redirect to https
+  if (location.protocol != 'https:') {
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  }
+  </script>  
 
   <!-- Facebook Pixel Code -->
   <script defer>
