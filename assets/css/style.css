@@ -761,6 +761,24 @@ header a:hover {
   font-family: "KeepCalm", sans-serif;
 }
 
+.candidates-count.godmode {
+  animation-name: godmode;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes godmode {
+  0% {
+    transform: scale(1);
+  }  
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }  
+}
+
 .register-number.content {
   margin-top: 410px;
   margin-left: 15px;

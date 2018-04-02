@@ -90,7 +90,38 @@ $(document).ready(function() {
     }
   })
   
-});
+  window.godmode = function() {
+    const data = {
+      content: Math.floor(Math.random() * 10000),
+      design: Math.floor(Math.random() * 10000),
+      marketing: Math.floor(Math.random() * 10000),
+      programming: Math.floor(Math.random() * 10000),
+    }
+    $('.candidates-count').addClass('godmode')
+    setInterval(() => {
+      $('#candidates-content').text(data.content)
+      $('#candidates-design').text(data.design)
+      $('#candidates-marketing').text(data.marketing)
+      $('#candidates-programming').text(data.programming)
+      data.content += 1000
+      data.design += 1000
+      data.marketing += 1000
+      data.programming += 1000
+    }, 10);
+    var store = ['content', 'marketing', 'design', 'programming'];
+    var index = 0;
+    setInterval(() => {
+      index--;
+      if (index == -1) index = 3;
+      $('.temple-division-selector').removeClass('active');
+      $('.temple-' + store[index]).addClass('active');
+      $('p[name="division-content"]').hide();
+      $('p[name="division-content"][data="'+store[index]+'"]').show();
+    }, 1000)
+    return "Godmode has beed enabled..."
+  }
+  
+})
 
 // create star particle
 particlesJS("particles-js", {
