@@ -1,3 +1,13 @@
+// connect to firebase
+var config = {
+  apiKey: "AIzaSyBNxcnU0P4XyuwybfISGtYasiEZbzpgV1A",
+  authDomain: "jwcx-196915.firebaseapp.com",
+  projectId: "jwcx-196915",
+};
+
+firebase.initializeApp(config);
+var db = firebase.firestore();
+
 $(document).ready(function() {
   var close = true;
   // mobile navigation bar
@@ -70,22 +80,15 @@ $(document).ready(function() {
     $('p[name="division-content"][data="'+store[index]+'"]').show();
   })
   // get candidates count 
-  // NOTE: waiting for api endpoint
-  // var apiEndpoint = 'https://api.registration.jwc.in.th/stats'
-  // $.get(apiEndpoint, function(res) {
-  //   if (res.content !== undefined) {
-  //     $('#candidates-content').text(res.content)
-  //   }
-  //   if (res.marketing !== undefined) {
-  //     $('#candidates-marketing').text(res.marketing)
-  //   }
-  //   if (res.design !== undefined) {
-  //     $('#candidates-design').text(res.design)
-  //   }
-  //   if (res.programming !== undefined) {
-  //     $('#candidates-programming').text(res.programming)
-  //   }
-  // })
+  db.collection('stats').doc("counter").get().then(doc => {
+    if (doc.exists) {
+      const data = doc.data()
+      $('#candidates-content').text(data.content)
+      $('#candidates-design').text(data.design)
+      $('#candidates-marketing').text(data.marketing)
+      $('#candidates-programming').text(data.programming)
+    }
+  })
   
 });
 

@@ -755,6 +755,12 @@ header a:hover {
   line-height: 30px;
 }
 
+.candidates-count {
+  display: block;
+  font-size: 25px;
+  font-family: "KeepCalm", sans-serif;
+}
+
 .register-number.content {
   margin-top: 410px;
   margin-left: 15px;

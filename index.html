@@ -49,9 +49,9 @@
   
   <script type="text/javascript">
   // automate redirect to https
-  if (location.protocol != 'https:') {
-   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-  }
+  // if (location.protocol != 'https:') {
+  //  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  // }
   </script>  
 
   <!-- Facebook Pixel Code -->
@@ -186,19 +186,19 @@
           </div>
           <div data="content" class="temple-division-selector temple-content active">
             <span class="heading content"><span>WEB</span> CONTENT</span>
-            <span class="register-number content"><span class="register-type">ผู้สมัคร</span id="candidates-content">0</span>
+            <span class="register-number content"><span class="register-type">ผู้สมัคร<span class="candidates-count" id="candidates-content">0</span>
           </div>
           <div data="marketing" class="temple-division-selector temple-marketing">
             <span class="heading marketing"><span>WEB</span> MARKETING</span>
-            <span class="register-number marketing"><span class="register-type">ผู้สมัคร</span id="candidates-content">0</span>
+            <span class="register-number marketing"><span class="register-type">ผู้สมัคร<span class="candidates-count" id="candidates-marketing">0</span>
           </div>
           <div data="design" class="temple-division-selector temple-design">
             <span class="heading design"><span>WEB</span> DESIGN</span>
-            <span class="register-number design"><span class="register-type">ผู้สมัคร</span id="candidates-content">0</span>
+            <span class="register-number design"><span class="register-type">ผู้สมัคร<span class="candidates-count" id="candidates-design">0</span>
           </div>
           <div data="programming" class="temple-division-selector temple-programming">
             <span class="heading programming"><span>WEB</span> PROGRAMMING</span>
-            <span class="register-number programming"><span class="register-type">ผู้สมัคร</span id="candidates-content">0</span>
+            <span class="register-number programming"><span class="register-type">ผู้สมัคร<span class="candidates-count" id="candidates-programming">0</span>
           </div>
         </div>
         <div class="big-registration-button">
@@ -490,6 +490,8 @@
         </div>
       </div>
 
+      <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
       <script src="assets/js/jquery.js" type="text/javascript"></script>
       <script src="assets/js/jquery.modal.js" type="text/javascript"></script>
       <script src="assets/js/particle.js" type="text/javascript"></script>
