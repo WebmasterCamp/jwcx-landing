@@ -55,6 +55,12 @@ body {
   -webkit-font-smoothing: antialiased
 }
 
+@media screen and (min-width: 1240px) {
+  body{
+    overflow-x: hidden;
+  }
+}
+
 h1, h2, h3, h4, h4 {
   font-family: "KeepCalm", sans-serif;
 }
