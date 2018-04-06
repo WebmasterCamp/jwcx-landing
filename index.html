@@ -49,10 +49,10 @@
   
   <script type="text/javascript">
   // automate redirect to https
-  if (location.protocol != 'https:') {
+  if (location.protocol != 'https:' && location.host.indexOf('localhost') === -1) {
    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
   }
-  </script>  
+  </script>
 
   <!-- Facebook Pixel Code -->
   <script defer>
@@ -119,6 +119,16 @@
           <span style="background: url(/assets/img/sponsors/circle/it.png) no-repeat; background-size: 100px;" class="sponsor-badge"></span>
           <span style="background: url(/assets/img/sponsors/circle/cpall.svg) no-repeat" class="sponsor-badge"></span>
           <span style="background: url(/assets/img/sponsors/circle/dek-d.svg) no-repeat" class="sponsor-badge"></span>
+          <span style="
+            background-image: url(/assets/img/sponsors/vip-scb.svg), url(/assets/img/sponsors/circle/template.svg);
+            background-size: contain, contain;
+            background-repeat: no-repeat, no-repeat;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background-origin: content-box, border-box;
+            background-position: center center;
+          " class="sponsor-badge"></span>
         </div>
         <h1 class="hero-text">Next Step Web Thai</h1>
         <p class="sub-hero-text">วันที่ 27-29 เมษายน 2561</p>
@@ -130,7 +140,7 @@
       <section id="section_about" class="about-wrapper">
         <div class="cloud-zone-1">
           <div style="margin-left: 80vw;" class="cloud cloud-1"></div>
-          <div style="margin-top: 20vh; margin-left: -10vw;"class="cloud cloud-1"></div>
+          <div style="margin-top: 20vh; margin-left: -10vw;" class="cloud cloud-1"></div>
           <div style="margin-left: 70vw; margin-top: 30vh;" class="cloud cloud-2"></div>
           <div style="margin-left: 5vw;" class="cloud cloud-2"></div>
           <div style="margin-left: 20vw;" class="cloud cloud-3"></div>
@@ -421,6 +431,7 @@
                 <div>
                   <img alt="vip-cp-all" height="100" class="sponsor-image vip" src="/assets/img/sponsors/vip-cp-all.svg">
                   <img alt="vip-dekd" height="60" class="sponsor-image vip-dekd" src="/assets/img/sponsors/vip-dekd.svg">
+                  <img alt="vip-scb" height="100" class="sponsor-image vip" src="/assets/img/sponsors/vip-scb-horizontal.svg">
                 </div>
                 <div>
                   <img alt="sp-camphub" height="70" class="sponsor-image sp" src="/assets/img/sponsors/sp-camphub.svg">
@@ -429,6 +440,7 @@
                 <div>
                   <img alt="p-inwshop" height="40" class="sponsor-image p-inwshop" src="/assets/img/sponsors/p-inwshop.png">
                   <img alt="p-penguin" height="80" class="sponsor-image p" src="/assets/img/sponsors/p-penguin.png">
+                  <img alt="p-penguin" height="80" class="sponsor-image p" src="/assets/img/sponsors/p-mango_zero.svg">
                 </div>
                 <div>
                   <img alt="s-iurban" height="35" class="sponsor-image s" src="/assets/img/sponsors/s-iurban.png">
@@ -463,6 +475,16 @@
           <span style="background: url(/assets/img/sponsors/circle/it.png) no-repeat; background-size: 100px;" class="sponsor-badge"></span>
           <span style="background: url(/assets/img/sponsors/circle/cpall.svg) no-repeat" class="sponsor-badge"></span>
           <span style="background: url(/assets/img/sponsors/circle/dek-d.svg) no-repeat" class="sponsor-badge"></span>
+          <span style="
+            background-image: url(/assets/img/sponsors/vip-scb.svg), url(/assets/img/sponsors/circle/template.svg);
+            background-size: contain, contain;
+            background-repeat: no-repeat, no-repeat;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background-origin: content-box, border-box;
+            background-position: center center;
+          " class="sponsor-badge"></span>
         </div>
         <span>Copyright © 2018, Young Webmaster Camp, in association with Thai Webmaster Association. All right reserved.</span>
       </footer>
