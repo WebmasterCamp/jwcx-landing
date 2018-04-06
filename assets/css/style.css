@@ -368,6 +368,36 @@ header a:hover {
   display: inline-block;
   width: 100px;
   height: 100px;
+  position: relative; /* Link can't click without specify this. */
+}
+.sponsor-badge.with-template{
+  background-size: 0;
+  position: relative;
+}
+.sponsor-badge.with-template::before, .sponsor-badge.with-template::after{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sponsor-badge.with-template::before{
+  background-image: url(../img/sponsors/circle/template.svg);
+}
+
+.sponsor-badge.with-template::after{
+  background-image: inherit;
+  z-index: 2;
+  left: 15%;
+  top: 20%;
+  width: 70%;
+  height: 60%;
 }
 
 .sponsor-container {
@@ -1177,7 +1207,38 @@ header a:hover {
   margin-top: 30px;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1040px) {  
+  .sponsor-wrapper{
+    position: relative;
+    background-color: rgb(239, 234, 230);
+    background-image: none;
+    height: 100%;
+    padding-bottom: 10vh;
+  }
+  .sponsor-wrapper::before, .sponsor-wrapper::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+    background: url(../img/sponsor-background.svg) no-repeat center;
+    background-size: auto 100%;
+  }
+  .sponsor-wrapper::before{
+    top: 0;
+    background-position: top center;
+  }
+  .sponsor-wrapper::after{
+    bottom: 0;
+    background-position: bottom center;
+  }
+
+  .sponsor-wrapper > div{
+    z-index: 99;
+    position: relative;
+  }
   .sponsor-wrapper>.content {
     width: 100%;
     padding: 0 10px;
