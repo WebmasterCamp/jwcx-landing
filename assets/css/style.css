@@ -412,6 +412,21 @@ header a:hover {
 .sponsor-image {
 	margin: 20px;
 }
+@media (min-width: 620px) {
+  .sponsor-container .sponsor-middle a{
+    height: 140px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .sponsor-container .sponsor-middle .sponsor-image.vip-dekd{
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .sponsor-container .sponsor-middle .sponsor-image.vip-scb{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
 
 @media (max-width: 620px) {
 	.sponsor-image {
