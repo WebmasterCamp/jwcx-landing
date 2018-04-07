@@ -49,9 +49,9 @@
   
   <script type="text/javascript">
   // automate redirect to https
-  if (location.protocol != 'https:' && location.host.indexOf('localhost') === -1) {
-   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-  }
+  // if (location.protocol != 'https:' && location.host.indexOf('localhost') === -1) {
+  //  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  // }
   </script>
 
   <!-- Facebook Pixel Code -->
@@ -425,7 +425,9 @@
                   <a href="http://www.scb.co.th/th/home"><img alt="vip-scb" height="100" class="sponsor-image vip" src="/assets/img/sponsors/vip-scb-horizontal.svg"></a>
                 </div>
                 <div>
-                  <a href="http://moonshot.co.th/"><img alt="sp-camphub" height="70" class="sponsor-image sp" src="/assets/img/sponsors/sp-moonshot.svg"></a>
+                  <a href="http://moonshot.co.th/">
+                    <div class="sponsor-moonshot"></div>
+                  </a>
                   <a href="https://www.camphub.in.th/"><img alt="sp-camphub" height="70" class="sponsor-image sp" src="/assets/img/sponsors/sp-camphub.svg"></a>
                   <a href="https://www.pathosting.co.th/"><img alt="sp-pathosting" height="70" class="sponsor-image sp" src="/assets/img/sponsors/sp-pathosting.gif"></a>
                 </div>

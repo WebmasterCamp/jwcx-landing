@@ -406,8 +406,19 @@ header a:hover {
 .sponsor-image {
 	margin: 20px;
 }
+.sponsor-moonshot {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/sponsors/sp-moonshot.svg) center center;
+  background-size: 100% auto;
+}
 
 @media (max-width: 620px) {
+  .sponsor-moonshot {
+    height: 80px;
+    width: 150px;
+  }
 	.sponsor-image {
 		height: 60px;
 	}	
