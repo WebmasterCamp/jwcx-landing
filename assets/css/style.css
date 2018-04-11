@@ -422,6 +422,9 @@ header a:hover {
 }
 
 @media (min-width: 620px) {
+  .sponsor-container .sponsor-orgs img{
+    margin-bottom: 0;
+  }
   .sponsor-container .sponsor-middle a{
     height: 140px;
     vertical-align: middle;
@@ -434,6 +437,14 @@ header a:hover {
   .sponsor-container .sponsor-middle .sponsor-image.vip-scb{
     margin-top: 40px;
     margin-bottom: 20px;
+  }
+  .sponsor-container .sponsor-middle .sponsor-image.vip-sellsuki{
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .sponsor-container .sponsor-partners .p-penguin{
+    margin-top: 0;
   }
 }
 
@@ -1217,6 +1228,8 @@ header a:hover {
   height: 980px;
   background: url(../img/sponsor-background.svg) no-repeat center;
   background-size: auto 100%;
+  z-index: 2;
+  position: relative; /* prevent sea spike overlay the sponsors links */
 }
 
 .sponsor-wrapper>.header {
@@ -1373,6 +1386,7 @@ section.contact-us {
   position: absolute;
   margin-top: -200px;
   background: url(../img/spike.svg) repeat-x center;
+  z-index: 0;
 }
 
 .gallery-container {
