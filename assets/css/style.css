@@ -457,7 +457,7 @@ header a:hover {
 		height: 60px;
 	}	
   .sponsor-image.super-vip {
-    height: 80px;
+    height: 70px;
   }
   .sponsor-image.super-vip-it {
     height: 100px;
@@ -465,6 +465,9 @@ header a:hover {
   }
   .sponsor-image.vip {
     height: 70px;
+  }
+  .sponsor-image.vip-sellsuki {
+    height: 50px;
   }
   .sponsor-image.vip-dekd {
     height: 40px;
@@ -476,13 +479,16 @@ header a:hover {
     height: 70px;
   }
   .sponsor-image.p-inwshop {
-    height: 40px;
+    height: 30px;
   }
-  .sponsor-image.s {
+  .sponsor-image.s-iurban {
+    height: 20px;
+  }
+  .sponsor-image.s-tipco {
     height: 30px;
   }
   .sponsor-image.p-mangozero {
-    height: 45px;
+    height: 30px;
   }
   .sponsor-container > div {
     margin-bottom: -5px;
