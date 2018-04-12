@@ -15,12 +15,23 @@ $(document).ready(function() {
   timeEnd.setMinutes(59);
   timeEnd.setSeconds(59);
   
+  var timerColorOrange = "#FE953D";
+  var timerColorRed = "#FE6477";
+  
   function updateTimer() {
     var timeNow = new Date();
     var timer = (timeEnd.getTime() - timeNow.getTime()) / 1000;
     var hours = Math.floor(timer / 3600);
     var minutes = Math.floor((timer - hours * 3600) / 60);
     var seconds = Math.floor(timer - hours * 3600 - minutes * 60);
+    
+    if (hours < 6 && hours > 3) {
+      $(".timer").css('color', timerColorOrange);
+    }
+    if (hours <= 3) {
+      $(".timer").css('color', timerColorRed);
+    }
+    
     $('#timer_hour').text(hours);
     $('#timer_minute').text(minutes);
     $('#timer_second').text(seconds);
