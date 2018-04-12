@@ -9,6 +9,26 @@ firebase.initializeApp(config);
 var db = firebase.firestore();
 
 $(document).ready(function() {
+  // timer
+  var timeEnd = new Date();
+  timeEnd.setHours(23);
+  timeEnd.setMinutes(59);
+  timeEnd.setSeconds(59);
+  
+  function updateTimer() {
+    var timeNow = new Date();
+    var timer = (timeEnd.getTime() - timeNow.getTime()) / 1000;
+    var hours = Math.floor(timer / 3600);
+    var minutes = Math.floor((timer - hours * 3600) / 60);
+    var seconds = Math.floor(timer - hours * 3600 - minutes * 60);
+    $('#timer_hour').text(hours);
+    $('#timer_minute').text(minutes);
+    $('#timer_second').text(seconds);
+  }
+  
+  updateTimer();
+  setInterval(updateTimer, 1000);
+  
   var close = true;
   // mobile navigation bar
   $('.nav-menu').click(function() {

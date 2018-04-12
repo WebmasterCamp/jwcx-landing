@@ -509,6 +509,24 @@ header a:hover {
   font-size: 30px;
   margin-top: 30px;
 }
+.sub-hero-text.timer {
+  color: #FEF464;
+  font-weight: bold;
+  animation-name: timer;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes timer {
+  to {
+    transform: scale(1);
+  }  
+  from {
+    transform: scale(1.2);
+  }
+}
 
 .register-button {
   position: absolute;
