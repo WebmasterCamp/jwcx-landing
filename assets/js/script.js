@@ -535,9 +535,7 @@ $(document).ready(function() {
       let item = announce[fields[i]].unreal[j];
       $(`#table_${fields[i]}_unreal`).append(`
         <tr>
-          <td><center>${fields[i][0].toUpperCase()}${item.id}</center></td>
           <td>${item.name}</td>
-          <td>${item.amount}</td>
         </tr>
       `);
     }
