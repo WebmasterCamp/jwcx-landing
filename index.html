@@ -127,7 +127,7 @@
         <!-- <p class="sub-hero-text timer">เหลือเวลาสมัคร<br> <span id="timer_hour"></span> ชั่วโมง <span id="timer_minute"></span> นาที <span id="timer_second"></span> วินาที</p> -->
         <div class="register-button">
           <!-- <a href="#register" rel="modal:open" class="hero-button">สมัครเลย</a> -->
-          <a href="#register" class="hero-button">ปิดรับสมัครแล้วจ้า</a>
+          <a href="#announce" rel="modal:open" class="hero-button">ประกาศรายชื่อผู้เข้ารอบ</a>
         </div>
       </section>
 
@@ -224,13 +224,13 @@
           <span>ระยะเวลา</span>
         </div>
         <div class="timeline-container">
-          <div style="background: url(assets/img/timeline/1-active.svg) no-repeat center;" class="timeline-item">
+          <div style="background: url(assets/img/timeline/1.svg) no-repeat center;" class="timeline-item">
             <div class="foot">
               <h2>รับสมัคร</h2>
               <span>30 มีนาคม - 12 เมษายน</span>
             </div>
           </div>
-          <div style="background: url(assets/img/timeline/2.svg) no-repeat center;" class="timeline-item">
+          <div style="background: url(assets/img/timeline/2-active.svg) no-repeat center;" class="timeline-item">
             <div class="foot">
               <h2>ประกาศผล</h2>
               <span>16 เมษายน</span>
@@ -502,6 +502,28 @@
           </a>
         </div>
       </div> -->
+      
+      <div id="announce" class="register-dialog">
+        <div class="header">โปรดเลือกสาขาเพื่อดูผลการสมัคร</div>
+        <div class="register-container">
+          <a href="https://registration.jwc.in.th/content" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/content.svg) no-repeat center"></div>
+            <span>สมัครสาขา Content</span>
+          </a>
+          <a href="https://registration.jwc.in.th/marketing" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/marketing.svg) no-repeat center"></div>
+            <span>สมัครสาขา Marketing</span>
+          </a>
+          <a href="https://registration.jwc.in.th/design" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/design.svg) no-repeat center"></div>
+            <span>สมัครสาขา Design</span>
+          </a>
+          <a href="https://registration.jwc.in.th/programming" class="register-item">
+            <div class="img" style="background: url(/assets/img/characters/only/programming.svg) no-repeat center"></div>
+            <span>สมัครสาขา Programming</span>
+          </a>
+        </div>
+      </div>
 
       <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
       <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
