@@ -199,7 +199,7 @@ const announce = {
     "programming": [
       {
         "id": 1,
-        "name": "กิตติภัฎ เดชกุุล",
+        "name": "กิตติภัฎ เดชกุล",
         "amount": "200.37"
       },
       {
