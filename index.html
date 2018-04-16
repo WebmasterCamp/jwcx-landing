@@ -505,24 +505,142 @@
       
       <div id="announce" class="register-dialog">
         <div class="header">โปรดเลือกสาขาเพื่อดูผลการสมัคร</div>
-        <div class="register-container">
-          <a href="https://registration.jwc.in.th/content" class="register-item">
+        <div class="announce-container" id="programming">
+          <div>
+            <div class="announce-header">ตัวจริง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_programming_real"></tbody>
+            </table>
+          </div>
+          <div>
+            <div class="announce-header">ตัวสำรอง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_programming_unreal"></tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="announce-container" id="marketing">
+          <div>
+            <div class="announce-header">ตัวจริง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_marketing_real"></tbody>
+            </table>
+          </div>
+          <div>
+            <div class="announce-header">ตัวสำรอง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_marketing_unreal"></tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="announce-container" id="design">
+          <div>
+            <div class="announce-header">ตัวจริง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_design_real"></tbody>
+            </table>
+          </div>
+          <div>
+            <div class="announce-header">ตัวสำรอง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_design_unreal"></tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="announce-container" id="content">
+          <div>
+            <div class="announce-header">ตัวจริง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_content_real"></tbody>
+            </table>
+          </div>
+          <div>
+            <div class="announce-header">ตัวสำรอง</div>  
+            <table class="announce-table">
+              <thead>
+                <tr>
+                  <td><center>ID</center></td>
+                  <td>ชื่อ</td>
+                  <td>จำนวนเงิน</td>
+                </tr>
+              </thead>
+              <tbody id="table_content_unreal"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="register-container" id="announce-container">
+          <a href="javascript:void(0)" id="content" class="announce register-item">
             <div class="img" style="background: url(/assets/img/characters/only/content.svg) no-repeat center"></div>
-            <span>สมัครสาขา Content</span>
+            <span>ดูผลประกาศสาขา<br>Content</span>
           </a>
-          <a href="https://registration.jwc.in.th/marketing" class="register-item">
+          <a href="javascript:void(0)" id="marketing" class="announce register-item">
             <div class="img" style="background: url(/assets/img/characters/only/marketing.svg) no-repeat center"></div>
-            <span>สมัครสาขา Marketing</span>
+            <span>ดูผลประกาศสาขา<br>Marketing</span>
           </a>
-          <a href="https://registration.jwc.in.th/design" class="register-item">
+          <a href="javascript:void(0)" id="design" class="announce register-item">
             <div class="img" style="background: url(/assets/img/characters/only/design.svg) no-repeat center"></div>
-            <span>สมัครสาขา Design</span>
+            <span>ดูผลประกาศสาขา<br>Design</span>
           </a>
-          <a href="https://registration.jwc.in.th/programming" class="register-item">
+          <a href="javascript:void(0)" id="programming" class="announce register-item">
             <div class="img" style="background: url(/assets/img/characters/only/programming.svg) no-repeat center"></div>
-            <span>สมัครสาขา Programming</span>
+            <span>ดูผลประกาศสาขา<br>Programming</span>
           </a>
         </div>
+        <center>
+          <a class="announce-button" href="#">ยืนยันสิทธิ์</a>
+        </center>
       </div>
 
       <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
