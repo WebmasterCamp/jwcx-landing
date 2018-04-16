@@ -285,8 +285,13 @@ const announce = {
       },
       {
         "id": 2,
-        "name": "นันทกานต์ ภูมิเลิศ",
+        "name": "น.ส. ณัฏฐพิชา  พีระกิตติรัตน์",
         "amount": "200.14"
+      },
+      {
+        "id": 3,
+        "name": "นันทกานต์ ภูมิเลิศ",
+        "amount": "200.15"
       }
     ],
     "content": [
@@ -358,12 +363,21 @@ $(document).ready(function() {
   }
   
   $('.announce-container').hide();
+  $('.announce-button').hide();
   $('.announce').on('click', function() {
     let field = $(this).attr('id');
+    $('.announce-button').show();
     $('.register-dialog > .header').text(`ประกาศผลสาขา ${field.toUpperCase()}`)
     $('.register-container').hide();
     $('.announce-container[id="'+field+'"]').show();
   })
+  
+  $('.announce-button').on('click', function() {
+    $('.announce-container').hide();
+    $('.register-container').show();
+    $('.announce-button').hide();
+    $('.register-dialog > .header').text(`โปรดเลือกสาขาเพื่อดูผลการสมัคร`);
+  });
   
   // timer
   var timeEnd = new Date();
