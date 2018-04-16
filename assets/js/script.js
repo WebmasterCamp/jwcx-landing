@@ -8,7 +8,363 @@ var config = {
 firebase.initializeApp(config);
 var db = firebase.firestore();
 
+const announce = {
+  "real": {
+    "design": [
+      {
+        "id": 1,
+        "name": "ก้องเกียรติ คุณพาณิชย์โชติ",
+        "amount": "200.01"
+      },
+      {
+        "id": 2,
+        "name": "กิตติภพ สินเทศ",
+        "amount": "200.02"
+      },
+      {
+        "id": 3,
+        "name": "ณัฐชนน ภูขมัง",
+        "amount": "200.03"
+      },
+      {
+        "id": 4,
+        "name": "ณัฐวรา นาคีสถิตย์",
+        "amount": "200.04"
+      },
+      {
+        "id": 5,
+        "name": "ธีร์ธัช ภัทรวโรดม",
+        "amount": "200.05"
+      },
+      {
+        "id": 6,
+        "name": "น.ส.ฐิติรัตน์ พงษ์จำปา",
+        "amount": "200.06"
+      },
+      {
+        "id": 7,
+        "name": "นางสาว อัญชลี เซี๊ยะสกุล",
+        "amount": "200.07"
+      },
+      {
+        "id": 8,
+        "name": "นางสาวธัญญชล นามวงศ์",
+        "amount": "200.08"
+      },
+      {
+        "id": 9,
+        "name": "นายภูรินท์ บุญเเห่ห้อม",
+        "amount": "200.09"
+      },
+      {
+        "id": 10,
+        "name": "พลภัทร วัฒนชัย",
+        "amount": "200.10"
+      },
+      {
+        "id": 11,
+        "name": "วิภาดา เนื้อทอง",
+        "amount": "200.11"
+      },
+      {
+        "id": 12,
+        "name": "สุธิดา ดวงรัศมี",
+        "amount": "200.12"
+      }
+    ],
+    "marketing": [
+      {
+        "id": 1,
+        "name": "Poonppa อารีย์สว่างกิจ",
+        "amount": "200.13"
+      },
+      {
+        "id": 2,
+        "name": "จิรพัทธ์ เกลาเกลี้ยง",
+        "amount": "200.14"
+      },
+      {
+        "id": 3,
+        "name": "ชนัญธิดา ม่วงน้อย",
+        "amount": "200.15"
+      },
+      {
+        "id": 4,
+        "name": "ณัฐสุภา อุราภรณ์",
+        "amount": "200.16"
+      },
+      {
+        "id": 5,
+        "name": "ธีรธรรม วิมุตตินันท์",
+        "amount": "200.17"
+      },
+      {
+        "id": 6,
+        "name": "นายสุรโชติ ชัยมงคล",
+        "amount": "200.18"
+      },
+      {
+        "id": 7,
+        "name": "เนื้อแพร ดวงศรี",
+        "amount": "200.19"
+      },
+      {
+        "id": 8,
+        "name": "ปัณณสิษฐ์ จิวะพงศ์",
+        "amount": "200.20"
+      },
+      {
+        "id": 9,
+        "name": "ภารวี วัฒนพรพรหม",
+        "amount": "200.21"
+      },
+      {
+        "id": 10,
+        "name": "รัญชนา ตันติรัฐพงศ์",
+        "amount": "200.22"
+      },
+      {
+        "id": 11,
+        "name": "ศาสตรา ศิริพรกิตติ",
+        "amount": "200.23"
+      },
+      {
+        "id": 12,
+        "name": "อารดา มันเดวอ",
+        "amount": "200.24"
+      }
+    ],
+    "content": [
+      {
+        "id": 1,
+        "name": "กฤตินันท์ ชัยวงษ์",
+        "amount": "200.25"
+      },
+      {
+        "id": 2,
+        "name": "จิรัชญา พงศ์พัฒนหยก",
+        "amount": "200.26"
+      },
+      {
+        "id": 3,
+        "name": "ชานน ยิ้มประสิทธิ์",
+        "amount": "200.27"
+      },
+      {
+        "id": 4,
+        "name": "โชติกานต์ เฉลิมจิระรัตน์",
+        "amount": "200.28"
+      },
+      {
+        "id": 5,
+        "name": "ณัฐพิมล ไชยขันธุ์",
+        "amount": "200.29"
+      },
+      {
+        "id": 6,
+        "name": "ทิพยวารี แซ่ลี้",
+        "amount": "200.30"
+      },
+      {
+        "id": 7,
+        "name": "ธิติพล ตาซื่อ",
+        "amount": "200.31"
+      },
+      {
+        "id": 8,
+        "name": "นภสร ฉัตรฉลองชัย",
+        "amount": "200.32"
+      },
+      {
+        "id": 9,
+        "name": "นางสาวนภัสรา อัศวเลิศศักดิ์",
+        "amount": "200.33"
+      },
+      {
+        "id": 10,
+        "name": "นาย ศักรินทร์ พูลสุข",
+        "amount": "200.34"
+      },
+      {
+        "id": 11,
+        "name": "พิริยา เตชาพิสุทธิ์",
+        "amount": "200.35"
+      },
+      {
+        "id": 12,
+        "name": "ภัทรานิษฐ์ คงแสนคำ",
+        "amount": "200.36"
+      }
+    ],
+    "programming": [
+      {
+        "id": 1,
+        "name": "กิตติภัฎ เดชกุุล",
+        "amount": "200.37"
+      },
+      {
+        "id": 2,
+        "name": "จันสิดา มกรานนท์",
+        "amount": "200.38"
+      },
+      {
+        "id": 3,
+        "name": "ชยภัทร อาชีวระงับโรค",
+        "amount": "200.39"
+      },
+      {
+        "id": 4,
+        "name": "ณัฐพร กอบกุลกัลยกร",
+        "amount": "200.40"
+      },
+      {
+        "id": 5,
+        "name": "ณัฐภัทร ศรีวิชัยลำพันธ์",
+        "amount": "200.41"
+      },
+      {
+        "id": 6,
+        "name": "ธนภัทร ธีรรัตตัญญู",
+        "amount": "200.42"
+      },
+      {
+        "id": 7,
+        "name": "นพรุจ สุวรรณบูรณ์",
+        "amount": "200.43"
+      },
+      {
+        "id": 8,
+        "name": "นันท์มนัส ปุณยพัฒน์",
+        "amount": "200.44"
+      },
+      {
+        "id": 9,
+        "name": "บุญธิชา แซ่เจี่ย",
+        "amount": "200.45"
+      },
+      {
+        "id": 10,
+        "name": "ปีย์มนัส คูตระกูล",
+        "amount": "200.46"
+      },
+      {
+        "id": 11,
+        "name": "ภูมิไผท จันทรศรีวงศ์",
+        "amount": "200.47"
+      },
+      {
+        "id": 12,
+        "name": "ศิวกร เลิศไตรภิญโญ",
+        "amount": "200.48"
+      }
+    ]
+  },
+  "unreal": {
+    "design": [
+      {
+        "id": 1,
+        "name": "ฟ้าพราว ขุนทอง",
+        "amount": "200.01"
+      },
+      {
+        "id": 2,
+        "name": "ลัลม์ลลิต วิระวงษ์นุสร",
+        "amount": "200.02"
+      },
+      {
+        "id": 3,
+        "name": "วีรวัฒน์ ปึงพิพัฒน์ตระกูล",
+        "amount": "200.03"
+      }
+    ],
+    "marketing": [
+      {
+        "id": 1,
+        "name": "ณีรนุช ยิ้มสบาย",
+        "amount": "200.13"
+      },
+      {
+        "id": 2,
+        "name": "นันทกานต์ ภูมิเลิศ",
+        "amount": "200.14"
+      }
+    ],
+    "content": [
+      {
+        "id": 1,
+        "name": "เจษฎา แสนศรี",
+        "amount": "200.25"
+      },
+      {
+        "id": 2,
+        "name": "ธนพร ขำเจริญ",
+        "amount": "200.26"
+      },
+      {
+        "id": 3,
+        "name": "นางสาวซุลฟาร์ บากาเด็ง",
+        "amount": "200.27"
+      },
+      {
+        "id": 4,
+        "name": "ปุณยภา  วิทูรปกรณ์",
+        "amount": "200.28"
+      }
+    ],
+    "programming": [
+      {
+        "id": 1,
+        "name": "ชัยพร บัวแก้ว",
+        "amount": "200.37"
+      },
+      {
+        "id": 2,
+        "name": "ปริญญา ประดิษฐ์",
+        "amount": "200.38"
+      },
+      {
+        "id": 3,
+        "name": "วรเมธ งามขำ",
+        "amount": "200.39"
+      }
+    ]
+  }
+}
+
 $(document).ready(function() {
+  // announce
+  let fields = ["programming", "design", "content", "marketing"];
+  for (let i = 0; i < fields.length; i++) {
+    // real 
+    for (let j = 0; j < announce.real[fields[i]].length; j++) {
+      let item = announce.real[fields[i]][j];
+      $(`#table_${fields[i]}_real`).append(`
+        <tr>
+          <td><center>${fields[i][0].toUpperCase()}${item.id}</center></td>
+          <td>${item.name}</td>
+          <td>${item.amount}</td>
+        </tr>
+      `);
+    }
+    // unreal
+    for (let j = 0; j < announce.unreal[fields[i]].length; j++) {
+      let item = announce.unreal[fields[i]][j];
+      $(`#table_${fields[i]}_unreal`).append(`
+        <tr>
+          <td>${item.name}</td>
+        </tr>
+      `);
+    }
+  }
+  
+  $('.announce-container').hide();
+  $('.announce').on('click', function() {
+    let field = $(this).attr('id');
+    $('.register-dialog > .header').text(`ประกาศผลสาขา ${field.toUpperCase()}`)
+    $('.register-container').hide();
+    $('.announce-container[id="'+field+'"]').show();
+  })
+  
   // timer
   var timeEnd = new Date();
   timeEnd.setHours(23);
