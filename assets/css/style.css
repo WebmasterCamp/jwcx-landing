@@ -1314,7 +1314,7 @@ header a:hover {
 
 .sponsor-wrapper {
   width: 100vw;
-  height: 980px;
+  height: 1100px;
   background: url(../img/sponsor-background.svg) no-repeat center;
   background-size: auto 100%;
   z-index: 2;
@@ -1339,14 +1339,14 @@ header a:hover {
 }
 
 .sponsor-wrapper>.content {
-  width: 1000px;
+  width: 760px;
   color: #3E2D22;
   line-height: 30px;
   margin: auto auto;
   margin-top: 30px;
 }
 
-@media (max-width: 1040px) {  
+@media (max-width: 900px) {  
   .sponsor-wrapper{
     position: relative;
     background-color: rgb(239, 234, 230);
