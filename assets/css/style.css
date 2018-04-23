@@ -511,6 +511,24 @@ header a:hover {
   .sponsor-container .sponsor-partners .p-penguin{
     margin-top: 0;
   }
+
+  .sponsor-container .sponsor-partners .p-startup_thailand{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+  }
+
+  .sponsor-container .sponsor-partners .p-haup{
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 60px;
+  }
+
+  .sponsor-container .sponsor-partners .p-nia{
+    height: 55px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -1317,9 +1335,9 @@ header a:hover {
 
 .sponsor-wrapper {
   width: 100vw;
-  height: 1100px; 
+  height: 1100px;
   height: 100%;
-  min-height: 1175px;
+  min-height: 1100px;
   padding-bottom: 35px;
   background: url(../img/sponsor-background.svg) no-repeat center;
   background-size: auto 100%;
